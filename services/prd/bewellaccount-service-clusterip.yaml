@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cb-ca-prd-bewellaccount-service
+  namespace: bewellaccount-service
+spec:
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 8080
+  selector:
+    app: cb-ca-prd-bewellaccount-service
+  type: ClusterIP
+

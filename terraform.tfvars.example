@@ -1,7 +1,0 @@
-environment = "nonprod" # or prod
-
-mongodb_public_key  = "xxxx"
-mongodb_private_key = "xxxx"
-
-
- supplies actual value 

@@ -1,0 +1,1508 @@
+# 🚩 This file corresponds to the exported .yml from Carebook's App Configuration.
+#    Since we keep the same config, some values have quotes ' ', some don't, some values are multiline >-
+#    The goal is that we can export Carebook's config and compare to this file and see only our changes.
+#    We want as much as possible the same config except the necessary changes to make it work (domains, keys, etc.)
+#
+API:Key: <<SECRET IN KEYVAULT>>
+AdvancedStacktraceLogging:Enabled: 'false'
+AdvancedStacktraceLogging:ExcludeFullNameContains:0: ConfigurableProxyClient
+AdvancedStacktraceLogging:ExcludeFullNameContains:1: OAuthMessageHandler
+AdvancedStacktraceLogging:IncludeFullNameContains:0: Identity.UserManager
+Analytics:Amplitude:ApiKey: <<SECRET IN KEYVAULT>>
+Analytics:EncryptionConfiguration:IV: <<SECRET IN KEYVAULT>>
+Analytics:EncryptionConfiguration:Key: <<SECRET IN KEYVAULT>>
+ApplicationInsights:InstrumentationKey: <<SECRET IN KEYVAULT>>
+AskService:AdvancedStacktraceLogging:Enabled: 'false'
+AskService:DefaultTimeout: '00:00:30'
+AskService:Endpoint: https://askservice.b2c-prod.central.ca.mckesson.com/api/{version}
+AskService:Logging:IncludeScopes: 'false'
+AskService:Logging:LogLevel:Default: Error
+AskService:Logging:LogLevel:Microsoft: Information
+AskService:Logging:LogLevel:System: Information
+AskService:OAuth:ApiResourceName: Ask Service
+AskService:OAuth:Credentials:Scopes: ''
+AskService:ServiceName: AskService
+AskService:TopologyProxy:AllowedEndpoints: ^https://topology[.-].*\.mckesson\.(com|ca)/
+AskService:Version:Deprecated: ''
+AskService:Version:Stable: v1
+ApiHub:BaseUrl: https://apihub.mckesson.ca
+BeWellAccountService:DefaultTimeout: '00:00:30'
+BeWellAccountService:Endpoint: https://bewellaccountservice-b2c-prd.mckesson.ca/api/{version}
+BeWellAccountService:Logging:IncludeScopes: 'false'
+BeWellAccountService:Logging:LogLevel:Default: Error
+BeWellAccountService:Logging:LogLevel:Microsoft: Information
+BeWellAccountService:Logging:LogLevel:System: Information
+BeWellAccountService:OAuth:ApiResourceName: BeWell Account Service
+BeWellAccountService:OAuth:Credentials:Scopes: ''
+BeWellAccountService:ServiceName: BeWellAccountService
+BeWellAccountService:Version:Deprecated: ''
+BeWellAccountService:Version:Stable: v1
+BffCarebookService:Endpoint: https://bffservice-b2c-prd.mckesson.ca
+BffCarebookService:ServiceName: BffCarebookService
+BffCarebookService:Version:Deprecated: ''
+BffCarebookService:Version:Stable: v1
+CDN:DefaultTimeout: '00:00:30'
+CDN:Endpoint: https://cdn-ca-prd-mk.mkpbcb.com
+CDN:ServiceName: CDN
+CDN:Version:Stable: v1
+CalculationService:DefaultTimeout: '00:00:30'
+CalculationService:Endpoint: https://hraservice-ent-core.b2c-prod.central.ca.mckesson.com/api/{version}
+CalculationService:Logging:IncludeScopes: 'false'
+CalculationService:Logging:LogLevel:Default: Error
+CalculationService:Logging:LogLevel:Microsoft: Information
+CalculationService:Logging:LogLevel:System: Information
+CalculationService:OAuth:ApiResourceName: Hra Service
+CalculationService:OAuth:Credentials:Scopes: ids
+CalculationService:ServiceBusSettings:ConnectionString: <<SECRET IN KEYVAULT>>
+CalculationService:ServiceBusSettings:CurrentSubscriptionName: HraService
+CalculationService:ServiceName: HraService
+CalculationService:Version:Deprecated: ''
+CalculationService:Version:Stable: v1
+CommunicationService:AutomatedDeletion:TenantProfileDeletionEmailEnabled: up,px
+CommunicationService:DefaultTimeout: '00:00:30'
+CommunicationService:Endpoint: https://communicationservice.b2c-prod.central.ca.mckesson.com/api/{version}
+CommunicationService:Logging:IncludeScopes: 'false'
+CommunicationService:Logging:LogLevel:Default: Error
+CommunicationService:Logging:LogLevel:Microsoft: Information
+CommunicationService:Logging:LogLevel:System: Information
+CommunicationService:OAuth:ApiResourceName: Communication Service
+CommunicationService:OAuth:Credentials:Scopes: >-
+  ids lms lms.third-parties.read lms.third-parties.search
+  lms.third-party-links.full_access.all_users ls.loyalty-profiles.read.all_users
+CommunicationService:ServiceBusSettings:ConnectionString: <<SECRET IN KEYVAULT>>
+CommunicationService:ServiceBusSettings:CurrentSubscriptionName: CommunicationService
+CommunicationService:ServiceName: CommunicationService
+CommunicationService:TenantDataExtensionConfig:CollectionNameMappings:bp: ALL_MEMBERS
+CommunicationService:TenantDataExtensionConfig:CollectionNameMappings:px: ALL_MEMBERS_PROXIM
+CommunicationService:TenantDataExtensionConfig:CollectionNameMappings:up: ALL_MEMBERS
+CommunicationService:Version:Deprecated: ''
+CommunicationService:Version:Stable: v1
+Configuration:version: '1.0'
+ConnectAgentBypass:Key: <<SECRET IN KEYVAULT>>
+CoreAppApiService:AdvancedStacktraceLogging:Enabled: 'false'
+Cors:AllowedRootDomain:0: https://*.mckesson.ca
+Cors:AllowedRootDomain:1: http://*.mckesson.ca
+Cors:AllowedRootDomain:2: https://*.mckesson.ca:8080
+Cors:AllowedRootDomain:3: https://*.web.core.windows.net
+Cors:AllowedRootDomain:4: https://*.web.core.windows.net:8080
+DocumentStoreService:DefaultTimeout: '00:00:30'
+DocumentStoreService:Endpoint: https://documentstoreservice.b2c-prod.central.ca.mckesson.com/api/{version}
+DocumentStoreService:Logging:IncludeScopes: 'false'
+DocumentStoreService:Logging:LogLevel:Default: Error
+DocumentStoreService:Logging:LogLevel:Microsoft: Information
+DocumentStoreService:Logging:LogLevel:System: Information
+DocumentStoreService:OAuth:ApiResourceName: Document Store Service
+DocumentStoreService:ServiceBusSettings:ConnectionString: <<SECRET IN KEYVAULT>>
+DocumentStoreService:ServiceBusSettings:CurrentSubscriptionName: DocumentStoreService
+DocumentStoreService:ServiceName: DocumentStoreService
+DocumentStoreService:Version:Deprecated: ''
+DocumentStoreService:Version:Stable: v1
+ESiService:DefaultTimeout: '00:00:30'
+ESiService:Endpoint: https://esi-service.b2c-prod.central.ca.mckesson.com/api/{version}
+ESiService:HttpHeaderToLogPropertyMapper:cb_runtime_correlationid: MCK-CORRELATIONID
+ESiService:Logging:IncludeScopes: 'false'
+ESiService:Logging:LogLevel:Default: Error
+ESiService:Logging:LogLevel:Microsoft: Information
+ESiService:Logging:LogLevel:System: Information
+ESiService:OAuth:ApiResourceName: ESi Service
+ESiService:OAuth:Credentials:Scopes: >-
+  esi esi.profiles.read.all_users esi.profiles.update.all_users ids ps
+  ps.profile.read lms lms.third-party-links.search.all_users
+ESiService:ServiceBusSettings:ConnectionString: <<SECRET IN KEYVAULT>>
+ESiService:ServiceBusSettings:CurrentSubscriptionName: ESiService
+ESiService:ServiceName: ESiService
+ESiService:Version:Deprecated: ''
+ESiService:Version:Stable: v1
+FunctionalTest:CarebookMobileClientId: <<SECRET IN KEYVAULT>>
+FunctionalTest:CarebookMobileClientSecret: <<SECRET IN KEYVAULT>>
+HealthService:DefaultTimeout: '00:00:30'
+HealthService:Endpoint: https://healthservice.b2c-prod.central.ca.mckesson.com/api/{version}
+HealthService:FhirMigrator:ResourceToMigrate: Immunization
+HealthService:FhirMigrator:Store:ConnectionString: <<SECRET IN KEYVAULT>>
+HealthService:FhirMigrator:Store:TablePrefix: MkprdCa
+HealthService:Logging:IncludeScopes: 'false'
+HealthService:Logging:LogLevel:Default: Error
+HealthService:Logging:LogLevel:Microsoft: Information
+HealthService:Logging:LogLevel:System: Information
+HealthService:OAuth:ApiResourceName: Health Service
+HealthService:OAuth:Credentials:Scopes: ''
+HealthService:ServiceBusSettings:ConnectionString: <<SECRET IN KEYVAULT>>
+HealthService:ServiceBusSettings:CurrentSubscriptionName: HealthService
+HealthService:ServiceName: HealthService
+HealthService:Version:Deprecated: ''
+HealthService:Version:Stable: v1,v2
+HealthtrackerService:Endpoint: https://healthtrackerservice.b2c-prod.central.ca.mckesson.com/api/{version}
+HealthtrackerService:Logging:IncludeScopes: 'false'
+HealthtrackerService:Logging:LogLevel:Default: Error
+HealthtrackerService:Logging:LogLevel:Microsoft: Information
+HealthtrackerService:Logging:LogLevel:System: Information
+HealthtrackerService:OAuth:ApiResourceName: Health Tracker Service
+HealthtrackerService:OAuth:Credentials:Scopes: >-
+  ids lms lms.third-parties.read lms.third-parties.search
+  lms.third-party-links.full_access.all_users
+HealthtrackerService:ServiceName: HealthTrackerService
+HealthtrackerService:Version:Deprecated: ''
+HealthtrackerService:Version:Stable: v1
+IdentityService:AdvancedStacktraceLogging:Enabled: 'false'
+IdentityService:AllowedCorsOrigins:AskWeb:0: https://ask-b2c-prd.mckesson.ca
+IdentityService:AllowedCorsOrigins:CarebookWeb:0: https://app.uniprix.com
+IdentityService:AllowedCorsOrigins:CarebookWeb:1: https://app.groupeproxim.ca
+IdentityService:AllowedCorsOrigins:CarebookWeb:2: https://app.monfidelo.ca
+IdentityService:ClientsCredentials:AskWeb: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:BeWellAskWeb: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:BeWellMobile: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:BeWellWeb: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:CBPharmaMobile: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:CBPortalWeb: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:CarebookAskWeb: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:CarebookMobile: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:CarebookWeb: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:CustomExpirationMobileClient: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:MyVitalsForWorkAskWeb: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:MyVitalsForWorkMobile: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:RefreshCache: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:ReportingCollectorJob: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:mckesson: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:platform-api: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:preferredperks: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:proxim: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:rexall: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:uniprix: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:wellca: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:bienplus: <<SECRET IN KEYVAULT>>
+IdentityService:ClientsCredentials:BienplusAskWeb: <<SECRET IN KEYVAULT>>
+IdentityService:DataProtection:KeyVaultIdentifier: <<SECRET IN KEYVAULT>>
+IdentityService:DataProtection:KeysFilePath: <<SECRET IN KEYVAULT>>
+IdentityService:DefaultTimeout: '00:00:30'
+IdentityService:Endpoint: https://verify-b2c-prd.mckesson.ca
+IdentityService:HttpHeaderToLogPropertyMapper:cb_runtime_correlationid: MCK-CORRELATIONID
+IdentityService:IdentityOptions:AccountLockoutTimeSpanSeconds: '300'
+IdentityService:IdentityOptions:MaxFailedAccessAttempts: '5'
+IdentityService:IdentityOptions:MinimumPasswordLength: '8'
+IdentityService:IdentityOptions:RequireDigit: 'true'
+IdentityService:IdentityOptions:RequireLowercase: 'true'
+IdentityService:IdentityOptions:RequireNonAlphanumeric: 'true'
+IdentityService:IdentityOptions:RequireUppercase: 'true'
+IdentityService:IdentityPages:HasConsentHint:BeWellAskWeb: 'false'
+IdentityService:IdentityPages:HasConsentHint:BeWellMobile: 'false'
+IdentityService:IdentityPages:HasConsentHint:BeWellWeb: 'false'
+IdentityService:IdentityPages:HasConsentHint:BienplusAskWeb: 'false'
+IdentityService:IdentityPages:HasConsentHint:BienplusMobile: 'false'
+IdentityService:IdentityPages:HasConsentHint:BienplusWeb: 'false'
+IdentityService:IdentityPages:HasConsentHint:ProximAskWeb: 'false'
+IdentityService:IdentityPages:HasConsentHint:ProximMobile: 'false'
+IdentityService:IdentityPages:HasConsentHint:ProximWeb: 'false'
+IdentityService:IdentityPages:HasConsentHint:UniprixAskWeb: 'false'
+IdentityService:IdentityPages:HasConsentHint:UniprixMobile: 'false'
+IdentityService:IdentityPages:HasConsentHint:UniprixWeb: 'false'
+IdentityService:IdentityPages:HasConsentHint:preferredperks: 'false'
+IdentityService:IdentityPages:HasConsentHint:wellca: 'true'
+IdentityService:IdentityPages:HasFooter:BeWellAskWeb: 'false'
+IdentityService:IdentityPages:HasFooter:BeWellMobile: 'false'
+IdentityService:IdentityPages:HasFooter:BeWellWeb: 'true'
+IdentityService:IdentityPages:HasFooter:BienplusAskWeb: 'false'
+IdentityService:IdentityPages:HasFooter:BienplusMobile: 'false'
+IdentityService:IdentityPages:HasFooter:BienplusWeb: 'true'
+IdentityService:IdentityPages:HasFooter:ProximAskWeb: 'false'
+IdentityService:IdentityPages:HasFooter:ProximMobile: 'false'
+IdentityService:IdentityPages:HasFooter:ProximWeb: 'true'
+IdentityService:IdentityPages:HasFooter:UniprixAskWeb: 'false'
+IdentityService:IdentityPages:HasFooter:UniprixMobile: 'false'
+IdentityService:IdentityPages:HasFooter:UniprixWeb: 'true'
+IdentityService:IdentityPages:HasFooter:preferredperks: 'false'
+IdentityService:IdentityPages:HasFooter:wellca: 'false'
+IdentityService:IdentityPages:IsFirstParty:BeWellAskWeb: 'true'
+IdentityService:IdentityPages:IsFirstParty:BeWellMobile: 'true'
+IdentityService:IdentityPages:IsFirstParty:BeWellWeb: 'true'
+IdentityService:IdentityPages:IsFirstParty:BienplusAskWeb: 'true'
+IdentityService:IdentityPages:IsFirstParty:BienplusMobile: 'true'
+IdentityService:IdentityPages:IsFirstParty:BienplusWeb: 'true'
+IdentityService:IdentityPages:IsFirstParty:ProximAskWeb: 'true'
+IdentityService:IdentityPages:IsFirstParty:ProximMobile: 'true'
+IdentityService:IdentityPages:IsFirstParty:ProximWeb: 'true'
+IdentityService:IdentityPages:IsFirstParty:UniprixAskWeb: 'true'
+IdentityService:IdentityPages:IsFirstParty:UniprixMobile: 'true'
+IdentityService:IdentityPages:IsFirstParty:UniprixWeb: 'true'
+IdentityService:IdentityPages:IsFirstParty:preferredperks: 'false'
+IdentityService:IdentityPages:IsFirstParty:wellca: 'false'
+IdentityService:IdentityPages:IsMobile:BeWellAskWeb: 'false'
+IdentityService:IdentityPages:IsMobile:BeWellMobile: 'true'
+IdentityService:IdentityPages:IsMobile:BeWellWeb: 'false'
+IdentityService:IdentityPages:IsMobile:BienplusAskWeb: 'false'
+IdentityService:IdentityPages:IsMobile:BienplusMobile: 'true'
+IdentityService:IdentityPages:IsMobile:BienplusWeb: 'false'
+IdentityService:IdentityPages:IsMobile:ProximAskWeb: 'false'
+IdentityService:IdentityPages:IsMobile:ProximMobile: 'true'
+IdentityService:IdentityPages:IsMobile:ProximWeb: 'false'
+IdentityService:IdentityPages:IsMobile:UniprixAskWeb: 'false'
+IdentityService:IdentityPages:IsMobile:UniprixMobile: 'true'
+IdentityService:IdentityPages:IsMobile:UniprixWeb: 'false'
+IdentityService:IdentityPages:IsMobile:preferredperks: 'false'
+IdentityService:IdentityPages:IsMobile:wellca: 'false'
+IdentityService:IdentityPages:IsSupportCreateNewAccountWebRedirection:BeWellAskWeb: 'false'
+IdentityService:IdentityPages:IsSupportCreateNewAccountWebRedirection:BeWellMobile: 'false'
+IdentityService:IdentityPages:IsSupportCreateNewAccountWebRedirection:BeWellWeb: 'true'
+IdentityService:IdentityPages:IsSupportCreateNewAccountWebRedirection:BienplusAskWeb: 'false'
+IdentityService:IdentityPages:IsSupportCreateNewAccountWebRedirection:BienplusMobile: 'false'
+IdentityService:IdentityPages:IsSupportCreateNewAccountWebRedirection:BienplusWeb: 'true'
+IdentityService:IdentityPages:IsSupportCreateNewAccountWebRedirection:ProximAskWeb: 'false'
+IdentityService:IdentityPages:IsSupportCreateNewAccountWebRedirection:ProximMobile: 'false'
+IdentityService:IdentityPages:IsSupportCreateNewAccountWebRedirection:ProximWeb: 'true'
+IdentityService:IdentityPages:IsSupportCreateNewAccountWebRedirection:UniprixAskWeb: 'false'
+IdentityService:IdentityPages:IsSupportCreateNewAccountWebRedirection:UniprixMobile: 'false'
+IdentityService:IdentityPages:IsSupportCreateNewAccountWebRedirection:UniprixWeb: 'true'
+IdentityService:IdentityPages:IsSupportCreateNewAccountWebRedirection:preferredperks: 'false'
+IdentityService:IdentityPages:IsSupportCreateNewAccountWebRedirection:wellca: 'false'
+IdentityService:IdentityPages:IsSupportFrenchToggle:BeWellAskWeb: 'true'
+IdentityService:IdentityPages:IsSupportFrenchToggle:BeWellMobile: 'false'
+IdentityService:IdentityPages:IsSupportFrenchToggle:BeWellWeb: 'false'
+IdentityService:IdentityPages:IsSupportFrenchToggle:BienplusAskWeb: 'true'
+IdentityService:IdentityPages:IsSupportFrenchToggle:BienplusMobile: 'true'
+IdentityService:IdentityPages:IsSupportFrenchToggle:BienplusWeb: 'true'
+IdentityService:IdentityPages:IsSupportFrenchToggle:ProximAskWeb: 'true'
+IdentityService:IdentityPages:IsSupportFrenchToggle:ProximMobile: 'true'
+IdentityService:IdentityPages:IsSupportFrenchToggle:ProximWeb: 'true'
+IdentityService:IdentityPages:IsSupportFrenchToggle:UniprixAskWeb: 'true'
+IdentityService:IdentityPages:IsSupportFrenchToggle:UniprixMobile: 'true'
+IdentityService:IdentityPages:IsSupportFrenchToggle:UniprixWeb: 'true'
+IdentityService:IdentityPages:IsSupportFrenchToggle:preferredperks: 'false'
+IdentityService:IdentityPages:IsSupportFrenchToggle:wellca: 'false'
+IdentityService:IdentityPages:IsSupportUserMigration:BeWellAskWeb: 'false'
+IdentityService:IdentityPages:IsSupportUserMigration:BeWellMobile: 'false'
+IdentityService:IdentityPages:IsSupportUserMigration:BeWellWeb: 'false'
+IdentityService:IdentityPages:IsSupportUserMigration:BienplusAskWeb: 'false'
+IdentityService:IdentityPages:IsSupportUserMigration:BienplusMobile: 'false'
+IdentityService:IdentityPages:IsSupportUserMigration:BienplusWeb: 'false'
+IdentityService:IdentityPages:IsSupportUserMigration:ProximAskWeb: 'false'
+IdentityService:IdentityPages:IsSupportUserMigration:ProximMobile: 'true'
+IdentityService:IdentityPages:IsSupportUserMigration:ProximWeb: 'true'
+IdentityService:IdentityPages:IsSupportUserMigration:UniprixAskWeb: 'false'
+IdentityService:IdentityPages:IsSupportUserMigration:UniprixMobile: 'true'
+IdentityService:IdentityPages:IsSupportUserMigration:UniprixWeb: 'true'
+IdentityService:IdentityPages:IsSupportUserMigration:preferredperks: 'false'
+IdentityService:IdentityPages:IsSupportUserMigration:wellca: 'false'
+IdentityService:IdentityServerOrigin: https://verify-b2c-prd.mckesson.ca
+IdentityService:IssuerUri: https://verify-b2c-prd.mckesson.ca
+IdentityService:Logging:IncludeScopes: 'false'
+IdentityService:Logging:LogLevel:Default: Error
+IdentityService:Logging:LogLevel:Microsoft: Information
+IdentityService:Logging:LogLevel:System: Information
+IdentityService:MFACodeExpirationSeconds: <<SECRET IN KEYVAULT>>
+IdentityService:OAuth:ApiResourceName: Identity Service
+IdentityService:OAuth:Credentials:Scopes: ''
+IdentityService:RedirectUris:AskWeb:0: https://ask-b2c-prd.mckesson.ca/oauth_callback
+IdentityService:RedirectUris:ProximAskWeb:0: https://ask-b2c-prd.mckesson.ca/oauth_callback
+IdentityService:RedirectUris:UniprixAskWeb:0: https://ask-b2c-prd.mckesson.ca/oauth_callback
+IdentityService:RedirectUris:wellca:0: https://well.ca/index.php?main_page=bewell_auth_callback
+IdentityService:RedirectUris:preferredperks:0: https://letsbewell.ca/status
+IdentityService:RedirectUris:BeWellMobile:0: app.letsbewell.android://app.letsbewell.ca/internal/mk/oauth_callback
+IdentityService:RedirectUris:BeWellMobile:1: app.letsbewell-auth://app.letsbewell.ca/internal/mk/oauth_callback
+IdentityService:RedirectUris:UniprixWeb:0: https://app.uniprix.com/oauth_callback
+IdentityService:RedirectUris:BeWellWeb:0: https://app.letsbewell.ca/oauth_callback
+IdentityService:RedirectUris:ProximWeb:0: https://app.groupeproxim.ca/oauth_callback
+IdentityService:RedirectUris:UniprixMobile:0: ca.tank.uniprix://app-b2c-prd.uniprix.com/internal/up/oauth_callback
+IdentityService:RedirectUris:UniprixMobile:1: ca.tank.uniprix-auth://app-b2c-prd.uniprix.com/internal/up/oauth_callback
+IdentityService:RedirectUris:UniprixMobile:2: ca.tank.uniprix://app.uniprix.com/internal/up/oauth_callback
+IdentityService:RedirectUris:UniprixMobile:3: ca.tank.uniprix-auth://app.uniprix.com/internal/up/oauth_callback
+IdentityService:RedirectUris:ProximMobile:0: com.cellflare.proximpharmacy-auth://app.groupeproxim.ca/internal/px/oauth_callback
+IdentityService:RedirectUris:ProximMobile:1: com.cellflare.proximpharmacy://app.groupeproxim.ca/internal/px/oauth_callback
+IdentityService:RedirectUris:ProximMobile:2: com.proximpharmacy.android://app.groupeproxim.ca/internal/px/oauth_callback
+IdentityService:RedirectUris:ProximMobile:3: com.proximpharmacy.android-auth://app.groupeproxim.ca/internal/px/oauth_callback
+IdentityService:RedirectUris:BienplusWeb:0: https://app.monfidelo.ca/oauth_callback
+IdentityService:RedirectUris:BienplusAskWeb:0: https://ask-b2c-prd.mckesson.ca/oauth_callback
+IdentityService:ServiceBusSettings:ConnectionString: <<SECRET IN KEYVAULT>>
+IdentityService:ServiceBusSettings:CurrentSubscriptionName: IdentityService
+IdentityService:ServiceCacheSettings:ConnectionString: <<SECRET IN KEYVAULT>>
+IdentityService:ServiceCacheSettings:KeyMaxCharLength: '64'
+IdentityService:ServiceCacheSettings:ServicesAuthorizedToWriteInCache:0: IdentityService
+IdentityService:ServiceCacheSettings:ValueMaxCharLength: '512'
+IdentityService:ServiceName: IdentityService
+IdentityService:Signing:KeyId: <<SECRET IN KEYVAULT>>
+IdentityService:Signing:Parameters:D: <<SECRET IN KEYVAULT>>
+IdentityService:Signing:Parameters:DP: <<SECRET IN KEYVAULT>>
+IdentityService:Signing:Parameters:DQ: <<SECRET IN KEYVAULT>>
+IdentityService:Signing:Parameters:Exponent: <<SECRET IN KEYVAULT>>
+IdentityService:Signing:Parameters:InverseQ: <<SECRET IN KEYVAULT>>
+IdentityService:Signing:Parameters:Modulus: <<SECRET IN KEYVAULT>>
+IdentityService:Signing:Parameters:P: <<SECRET IN KEYVAULT>>
+IdentityService:Signing:Parameters:Q: <<SECRET IN KEYVAULT>>
+IdentityService:SupportedCultures:bp: fr-CA, en-CA
+IdentityService:SupportedCultures:cb: en-CA, fr-CA
+IdentityService:SupportedCultures:px: fr-CA, en-CA
+IdentityService:SupportedCultures:up: fr-CA, en-CA
+IdentityService:SupportedCultures:mk: en-CA
+IdentityService:TopRecordToDeleteExpiredRefreshtoken: <<SECRET IN KEYVAULT>>
+IdentityService:Version:Deprecated: ''
+IdentityService:Version:Stable: v1
+LinkManagerService:AdvancedStacktraceLogging:Enabled: 'false'
+LinkManagerService:DefaultTimeout: '00:00:30'
+LinkManagerService:Endpoint: https://linkmanagerservice.b2c-prod.central.ca.mckesson.com/api/{version}
+LinkManagerService:Logging:IncludeScopes: 'false'
+LinkManagerService:Logging:LogLevel:Default: Error
+LinkManagerService:Logging:LogLevel:Microsoft: Information
+LinkManagerService:Logging:LogLevel:System: Information
+LinkManagerService:OAuth:ApiResourceName: Link Manager Service
+LinkManagerService:OAuth:Credentials:Scopes: >-
+  ids com com.linker.full_access rps rps.linker.full_access ups
+  ups.linker.full_access pxs pxs.linker.full_access hts.users.delete
+LinkManagerService:ServiceBusSettings:ConnectionString: <<SECRET IN KEYVAULT>>
+LinkManagerService:ServiceBusSettings:CurrentSubscriptionName: LinkManagerService
+LinkManagerService:ServiceName: LinkManagerService
+LinkManagerService:Version:Deprecated: ''
+LinkManagerService:Version:Stable: v1,v2
+Loggly:InputKey: <<DEFINED BY TERRAFORM>>
+Loggly:RootUrl: https://logs-01.loggly.com/
+LoyaltyService:AdvancedStacktraceLogging:Enabled: 'false'
+LoyaltyService:DefaultTimeout: '00:00:30'
+LoyaltyService:Endpoint: https://loyaltyservice.b2c-prod.central.ca.mckesson.com/api/{version}
+LoyaltyService:Logging:IncludeScopes: 'false'
+LoyaltyService:Logging:LogLevel:Default: Error
+LoyaltyService:Logging:LogLevel:Microsoft: Information
+LoyaltyService:Logging:LogLevel:System: Information
+LoyaltyService:OAuth:ApiResourceName: Loyalty Service
+LoyaltyService:OAuth:Credentials:Scopes: lms lms.third-parties.full_access lms.third-party-links.full_access.all_users
+LoyaltyService:ProfileDeletion:ExternalAPITenantsSupported: bp
+LoyaltyService:ServiceBusSettings:ConnectionString: <<SECRET IN KEYVAULT>>
+LoyaltyService:ServiceBusSettings:CurrentSubscriptionName: LoyaltyService
+LoyaltyService:ServiceBusSettings:EventFilteringTenants:0: 88304927-ce7b-46fb-9351-9de854b0dca3
+LoyaltyService:ServiceName: LoyaltyService
+LoyaltyService:Version:Deprecated: ''
+LoyaltyService:Version:Stable: v1,v2
+LoyaltyService:ExchangeSolution:Authentication:OcpApimSubscriptionKey:BP: <<SECRET IN KEYVAULT>>
+Multitenancy:AllTenants: up,px,bp
+Multitenancy:Enabled: 'true'
+Multitenancy:FallBackTenant: up
+Multitenancy:ResolveTenantFromHeader: 'true'
+Multitenancy:ResolveTenantFromQueryString: 'false'
+Multitenancy:SupportedTenants:bp: 88304927-CE7B-46FB-9351-9DE854B0DCA3
+Multitenancy:SupportedTenants:mk: DF5A4D18-64E3-40C8-834C-2AC20AFFF704
+Multitenancy:SupportedTenants:px: 63B22DE8-FCB7-4C57-83EA-4ADBBF04A949
+Multitenancy:SupportedTenants:up: 91B06C67-FAB8-419D-B005-149309BA3DF2
+OAuth:Authority: https://verify-b2c-prd.mckesson.ca
+OAuth:Credentials:ClientId: platform-api
+OAuth:Credentials:ClientSecret: <<SECRET IN KEYVAULT>>
+PaymentService:AdvancedStacktraceLogging:Enabled: 'true'
+PaymentService:DefaultTimeout: '00:00:30'
+PaymentService:Endpoint: https://paymentservice.b2c-prod.central.ca.mckesson.com/api/{version}
+PaymentService:Logging:IncludeScopes: 'false'
+PaymentService:Logging:LogLevel:Default: Error
+PaymentService:Logging:LogLevel:Microsoft: Information
+PaymentService:Logging:LogLevel:System: Information
+PaymentService:OAuth:ApiResourceName: Payment Service
+PaymentService:OAuth:Credentials:Scopes: ids lms lms.third-party-links.full_access.all_users
+PaymentService:ServiceName: PaymentService
+PaymentService:Version:Deprecated: ''
+PaymentService:Version:Stable: v1
+ProfileService:AdvancedStacktraceLogging:Enabled: 'false'
+ProfileService:AutomatedDeletion:DelayMilliSeconds: '5000'
+ProfileService:AutomatedDeletion:TenantsSupported: up,px
+ProfileService:AutomatedDeletion:TopProfileRecord: '25'
+ProfileService:InactiveUserDetection:Enabled: 'true'
+ProfileService:InactiveUserDetection:TenantsSupported: up,px
+ProfileService:InactiveUserDetection:BatchSize: 500
+ProfileService:InactiveUserDetection:BatchDelayMilliseconds: 5000
+ProfileService:InactiveUserDetection:InactivityThresholdYears: 2
+ProfileService:InactiveUserDetection:SecondWarningDelayDays: 30
+ProfileService:InactiveUserDetection:DeletionTriggerDelayDays: 60
+ProfileService:DefaultTimeout: '00:00:30'
+ProfileService:Endpoint: https://profileservice-b2c-prd.mckesson.ca/api/{version}
+ProfileService:Logging:IncludeScopes: 'false'
+ProfileService:Logging:LogLevel:Default: Error
+ProfileService:Logging:LogLevel:Microsoft: Information
+ProfileService:Logging:LogLevel:System: Information
+ProfileService:OAuth:ApiResourceName: Profile Service
+ProfileService:OAuth:Credentials:Scopes: ''
+ProfileService:ServiceBusSettings:ConnectionString: <<SECRET IN KEYVAULT>>
+ProfileService:ServiceBusSettings:CurrentSubscriptionName: ProfileService
+ProfileService:ServiceName: ProfileService
+ProfileService:Version:Deprecated: ''
+ProfileService:Version:Stable: v1,v2
+ProximPharmacyService:DefaultTimeout: '00:00:30'
+ProximPharmacyService:Endpoint: https://proximpharmacyservice.b2c-prod.central.ca.mckesson.com/api/{version}
+ProximPharmacyService:InvitationLanguage: fr
+ProximPharmacyService:Logging:IncludeScopes: 'false'
+ProximPharmacyService:Logging:LogLevel:Default: Error
+ProximPharmacyService:Logging:LogLevel:Microsoft: Information
+ProximPharmacyService:Logging:LogLevel:System: Information
+ProximPharmacyService:OAuth:ApiResourceName: Proxim Pharmacy Service
+ProximPharmacyService:ServiceBusSettings:CurrentSubscriptionName: ProximPharmacyService
+ProximPharmacyService:ServiceBusSettings:EventFilteringTenants:0: 63B22DE8-FCB7-4C57-83EA-4ADBBF04A949
+ProximPharmacyService:ServiceName: ProximPharmacyService
+ProximPharmacyService:TenantCodeFilter: px
+ProximPharmacyService:Version:Deprecated: ''
+ProximPharmacyService:Version:Stable: v1
+RefreshToken: <<SECRET IN KEYVAULT>>
+ReminderService:DefaultTimeout: '00:00:30'
+ReminderService:Endpoint: https://reminderservice.b2c-prod.central.ca.mckesson.com/api/{version}
+ReminderService:Logging:IncludeScopes: 'false'
+ReminderService:Logging:LogLevel:Default: Error
+ReminderService:Logging:LogLevel:Microsoft: Information
+ReminderService:Logging:LogLevel:System: Information
+ReminderService:OAuth:ApiResourceName: Reminder Service
+ReminderService:OAuth:Credentials:Scopes: ''
+ReminderService:ServiceBusSettings:ConnectionString: <<SECRET IN KEYVAULT>>
+ReminderService:ServiceBusSettings:CurrentSubscriptionName: ReminderService
+ReminderService:ServiceName: ReminderService
+ReminderService:Version:Deprecated: ''
+ReminderService:Version:Stable: v1
+Reporting:DataFactoryConfiguration:AzureSubscriptionId: <<DEFINED BY TERRAFORM>>
+Reporting:DataFactoryConfiguration:AzureTenantId: <<DEFINED BY TERRAFORM>>
+Reporting:DataFactoryConfiguration:Name: <<DEFINED BY TERRAFORM>>
+Reporting:DataFactoryConfiguration:ResourceGroup: <<DEFINED BY TERRAFORM>>
+Reporting:DataFactoryConfiguration:ServicePrincipalLogin: <<SECRET IN KEYVAULT>>
+Reporting:DataFactoryConfiguration:ServicePrincipalPassword: <<SECRET IN KEYVAULT>>
+Reporting:Endpoint: ''
+Reporting:Logging:LogLevel:Default: Error
+Reporting:Logging:LogLevel:Microsoft: Information
+Reporting:Logging:LogLevel:System: Information
+Reporting:OAuth:ApiResourceName: Reporting job
+Reporting:OAuth:Authority: https://identityservice-b2c-prd.mckesson.ca
+Reporting:OAuth:Credentials:ClientId: ReportingCollectorJob
+Reporting:OAuth:Credentials:ClientSecret: <<SECRET IN KEYVAULT>>
+Reporting:OAuth:Credentials:Scopes: ps.profile.reporting.profiles.read lms.third-party-links.reporting.read
+Reporting:ServiceName: Reporting
+Reporting:Version:Stable: v1
+RexallPharmacyService:Endpoint: https://rexallpharmacyservice-b2c-prod.central.ca.mckesson.com/api/{version}
+RexallPharmacyService:ServiceName: RexallPharmacyService
+RexallPharmacyService:Version:Stable: v1
+Runtime:DeploymentEnvironment: Production
+SecurityLogging:StorageConnectionString: <<DEFINED BY TERRAFORM>>
+SecurityLogging:StorageTableName: alertEntries
+Smoketest:Password: <<SECRET IN KEYVAULT>>
+Smoketest:Username: <<SECRET IN KEYVAULT>>
+Smoketest:APIHub:ReflexPOS:ClientSecret: <<SECRET IN KEYVAULT>>
+Smoketest:APIHub:ReflexPOS:ClientId: <<SECRET IN KEYVAULT>>
+Smoketest:Mulesoft:ClientId: <<SECRET IN KEYVAULT>>
+Smoketest:Mulesoft:ClientSecret: <<SECRET IN KEYVAULT>>
+Smoketest:Mulesoft:CaRootPem: <<SECRET IN KEYVAULT>>
+Smoketest:Mulesoft:PatientsUrl: https://api.prod.az.mckesson.ca/canada/can-rbg-sync-patient-papi-prod2/patients
+Smoketest:Mulesoft:PrescriptionsUrl: https://api.prod.az.mckesson.ca/canada/can-rbg-sync-prescription-papi-prod2/prescriptions
+StoreService:AdvancedStacktraceLogging:Enabled: 'false'
+StoreService:DefaultTimeout: '00:00:30'
+StoreService:Endpoint: https://storeservice-ent.b2c-prod.central.ca.mckesson.com/api/{version}
+StoreService:Logging:IncludeScopes: 'false'
+StoreService:Logging:LogLevel:Default: Error
+StoreService:Logging:LogLevel:Microsoft: Information
+StoreService:Logging:LogLevel:System: Information
+StoreService:ServiceBusSettings:ConnectionString: <<SECRET IN KEYVAULT>>
+StoreService:ServiceBusSettings:CurrentSubscriptionName: StoreService
+StoreService:ServiceName: StoreService
+StoreService:Version:Deprecated: ''
+StoreService:Version:Stable: v1,v2
+SurveyClientService:DefaultTimeout: '00:00:30'
+SurveyClientService:Endpoint: https://surveychat-service-ent-core.b2c-prod.central.ca.mckesson.com/api/{version}
+SurveyClientService:Logging:IncludeScopes: 'false'
+SurveyClientService:Logging:LogLevel:Default: Error
+SurveyClientService:Logging:LogLevel:Microsoft: Information
+SurveyClientService:Logging:LogLevel:System: Information
+SurveyClientService:OAuth:ApiResourceName: Survey Client Service
+SurveyClientService:OAuth:Credentials:Scopes: ids ss.survey.read
+SurveyClientService:ServiceBusSettings:ConnectionString: <<SECRET IN KEYVAULT>>
+SurveyClientService:ServiceBusSettings:CurrentSubscriptionName: SurveyClientService
+SurveyClientService:ServiceName: SurveyChatService
+SurveyClientService:Version:Deprecated: v1
+SurveyClientService:Version:Stable: v2
+SurveyService:DefaultTimeout: '00:00:30'
+SurveyService:Endpoint: https://surveyservice-ent-core.b2c-prod.central.ca.mckesson.com/api/{version}
+SurveyService:Logging:IncludeScopes: 'false'
+SurveyService:Logging:LogLevel:Default: Error
+SurveyService:Logging:LogLevel:Microsoft: Information
+SurveyService:Logging:LogLevel:System: Information
+SurveyService:OAuth:ApiResourceName: Survey Service
+SurveyService:OAuth:Credentials:Scopes: ids
+SurveyService:ServiceBusSettings:ConnectionString: <<SECRET IN KEYVAULT>>
+SurveyService:ServiceBusSettings:CurrentSubscriptionName: SurveyService
+SurveyService:ServiceName: SurveyService
+SurveyService:Version:Deprecated: ''
+SurveyService:Version:Stable: v1
+Swagger:Enabled: 'false'
+Tenant: common
+TopologyService:DefaultTimeout: '00:00:30'
+TopologyService:Endpoint: https://topology.b2c-prod.central.ca.mckesson.com/api/{version}
+TopologyService:Logging:IncludeScopes: 'false'
+TopologyService:Logging:LogLevel:Default: Error
+TopologyService:Logging:LogLevel:Microsoft: Information
+TopologyService:Logging:LogLevel:System: Information
+TopologyService:Mapper:SupportedLanguages: en, fr
+TopologyService:ServiceName: TopologyService
+TopologyService:Version:Deprecated: ''
+TopologyService:Version:Stable: v1
+UniprixPharmacyService:DefaultTimeout: '00:00:30'
+UniprixPharmacyService:Endpoint: https://uniprixpharmacyservice.b2c-prod.central.ca.mckesson.com/api/{version}
+UniprixPharmacyService:InvitationLanguage: fr
+UniprixPharmacyService:Logging:IncludeScopes: 'false'
+UniprixPharmacyService:Logging:LogLevel:Default: Error
+UniprixPharmacyService:Logging:LogLevel:Microsoft: Information
+UniprixPharmacyService:Logging:LogLevel:System: Information
+UniprixPharmacyService:OAuth:ApiResourceName: Uniprix Pharmacy Service
+UniprixPharmacyService:ServiceBusSettings:CurrentSubscriptionName: UniprixPharmacyService
+UniprixPharmacyService:ServiceBusSettings:EventFilteringTenants:0: 91B06C67-FAB8-419D-B005-149309BA3DF2
+UniprixPharmacyService:ServiceName: UniprixPharmacyService
+UniprixPharmacyService:TenantCodeFilter: up
+UniprixPharmacyService:Version:Deprecated: ''
+UniprixPharmacyService:Version:Stable: v1
+tenant:bp:Analytics:Amplitude:ApiKey: <<SECRET IN KEYVAULT>>
+tenant:bp:Analytics:EncryptionConfiguration:IV: <<SECRET IN KEYVAULT>>
+tenant:bp:Analytics:EncryptionConfiguration:Key: <<SECRET IN KEYVAULT>>
+tenant:bp:AskService:AirTable:ApiKey: <<DEFINED BY TERRAFORM>>
+tenant:bp:AskService:AirTable:Endpoint: https://api.airtable.com/v0/appWN6zK7kRX4eeXz/Public%20Deep%20Links
+tenant:bp:AskService:Audit:Mongo:CollectionName: AskAudit
+tenant:bp:AskService:Audit:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:AskService:Audit:Mongo:DatabaseName: PlatformAudit
+tenant:bp:AskService:FeatureFlags:DefaultCommunicationOptIn: 'true'
+tenant:bp:AskService:FeatureFlags:Loyalty: 'true'
+tenant:bp:AskService:FeatureFlags:Pharmacy: false
+tenant:bp:AskService:Firestore:BaseAddress: <<DEFINED BY TERRAFORM>>
+tenant:bp:AskService:Firestore:DocumentUri: environments/ca-ca-prd/configuration/maintenance
+tenant:bp:AskService:Firestore:GoogleCredential: <<SECRET IN KEYVAULT>>
+tenant:bp:AskService:Firestore:GoogleScopes:0: https://www.googleapis.com/auth/datastore
+tenant:bp:AskService:Firestore:GoogleScopes:1: https://www.googleapis.com/auth/firebase.database
+tenant:bp:CalculationService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:CalculationService:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:CalculationService:Mongo:DatabaseName: CarebookPlatform
+tenant:bp:CommunicationService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:CommunicationService:DefaultLanguageConfiguration:Country: CA
+tenant:bp:CommunicationService:DefaultLanguageConfiguration:Language: fr
+tenant:bp:CommunicationService:EmailProvider: SalesForce
+tenant:bp:CommunicationService:ExternalProviderUserProverId:IsLoyaltyTenant: 'true'
+tenant:bp:CommunicationService:Firestore:auth_provider_x509_cert_url: <<DEFINED BY TERRAFORM>>
+tenant:bp:CommunicationService:Firestore:auth_uri: <<DEFINED BY TERRAFORM>>
+tenant:bp:CommunicationService:Firestore:client_email: <<DEFINED BY TERRAFORM>>
+tenant:bp:CommunicationService:Firestore:client_id: <<DEFINED BY TERRAFORM>>
+tenant:bp:CommunicationService:Firestore:client_x509_cert_url: <<DEFINED BY TERRAFORM>>
+tenant:bp:CommunicationService:Firestore:private_key: <<SECRET IN KEYVAULT>>
+tenant:bp:CommunicationService:Firestore:private_key_id: <<DEFINED BY TERRAFORM>>
+tenant:bp:CommunicationService:Firestore:project_id: <<DEFINED BY TERRAFORM>>
+tenant:bp:CommunicationService:Firestore:token_uri: <<DEFINED BY TERRAFORM>>
+tenant:bp:CommunicationService:Firestore:type: <<DEFINED BY TERRAFORM>>
+tenant:bp:CommunicationService:InboxMessages:Placeholders:Cdn_Url: https://cdn-ca-prd-mk.mkpbcb.com
+tenant:bp:CommunicationService:InboxMessages:Placeholders:Validity_Period_Hrs: https://cdn-ca-prd-mk.mkpbcb.com
+tenant:bp:CommunicationService:InboxMessages:TemplateFileName: Data/MessageTemplates/inboxMessageTemplates
+tenant:bp:CommunicationService:SalesForceSettings:MaxTimeCachedInSecond: '1800'
+tenant:bp:CommunicationService:SalesForceSettings:OAuthClientId: 83e5agbusm0n9l00o4f3zk7s
+tenant:bp:CommunicationService:SalesForceSettings:OAuthClientSecret: <<DEFINED BY TERRAFORM>>
+tenant:bp:CommunicationService:SalesForceSettings:OAuthEndpoint: https://mcyfylph2k6hlcsnf3wfd4c64488.auth.marketingcloudapis.com/v2/token
+tenant:bp:CommunicationService:SalesforceAdditionalProfileFields:IncludeAdditionalProfileFields: 'true'
+tenant:bp:CommunicationService:SalesforceBanner:Name: BIENPLUS
+tenant:bp:CommunicationService:SalesforceSubscriberKey:IsLoyaltyUID: 'true'
+tenant:bp:CommunicationService:SalesforceUserSubscriptionValues:Model: cb.Platform.CommunicationService.Business.SalesForce.Models.UserSubscriptionLoyaltyModel
+tenant:bp:CommunicationService:SendGridSettings:DontNotifyDomain: localhost.com
+tenant:bp:CommunicationService:SendGridSettings:Password: <<DEFINED BY TERRAFORM>>
+tenant:bp:CommunicationService:SendGridSettings:Sender: noreply@carebook.com
+tenant:bp:CommunicationService:SendGridSettings:SenderName: carebook
+tenant:bp:CommunicationService:SendGridSettings:SmtpEnableSsl: 'false'
+tenant:bp:CommunicationService:SendGridSettings:SmtpPort: '587'
+tenant:bp:CommunicationService:SendGridSettings:SmtpServer: smtp.sendgrid.net
+tenant:bp:CommunicationService:SendGridSettings:Timeout: '10000'
+tenant:bp:CommunicationService:SendGridSettings:UserName: apikey
+tenant:bp:CoreAppApiService:AzureStorage:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:CoreAppApiService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:CoreAppApiService:EnableHtsFeature: 'true'
+tenant:bp:CoreAppApiService:Flavor:MinimumAgeUser: '14'
+tenant:bp:DocumentStoreService:AzureStorage:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:DocumentStoreService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:Flavor:SupportedFlavors:0: bp
+tenant:bp:FunctionalTest:CarebookMobileClientId: BienplusMobile
+tenant:bp:FunctionalTest:CarebookMobileClientSecret: <<SECRET IN KEYVAULT>>
+tenant:bp:IdentityService:PasswordResetConfiguration:LinkMigratedUser: 'https://verify-b2c-prd.mckesson.ca/change-password?token={0}&culture={1}&ui-culture={2}'
+tenant:bp:StoreService:StoreDetailSettings:DeliveryTime:ReadyTimeCalculationMode: Static
+tenant:bp:HealthService:Broadcast:MaximumResourcesCountPerMessage: 50
+tenant:bp:HealthService:Broadcast:ResourcesEnabled: ''
+tenant:bp:HealthService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:HealthService:Medication:MedicationActiveTimeframeInMonths: 0
+tenant:bp:HealthService:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:HealthService:Mongo:DatabaseName: CarebookPlatform
+tenant:bp:HealthtrackerService:Persistence:ValidicUsers:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:IdentityService:AccessTokenOverride:Clients:BeWellMobile: 120
+tenant:bp:IdentityService:AccessTokenOverride:Clients:BienplusMobile: 120
+tenant:bp:IdentityService:AccessTokenOverride:Clients:CBPharmaMobile: 120
+tenant:bp:IdentityService:AccessTokenOverride:Clients:CustomExpirationMobileClient: 60
+tenant:bp:IdentityService:ChangePassword:MobileRedirection: https://www.mckesson.ca/internal/ftue/signin
+tenant:bp:IdentityService:ChangePassword:WebRedirection: https://app.monfidelo.ca/sign-in
+tenant:bp:IdentityService:CreateNewAccount:WebRedirection: https://app.monfidelo.ca/sign-up
+tenant:bp:IdentityService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:IdentityService:DynamicLink:AndroidConfiguration:MinimumVersion: ''
+tenant:bp:IdentityService:DynamicLink:AndroidConfiguration:NotInstalledLink: https://app.monfidelo.ca/sign-in
+tenant:bp:IdentityService:DynamicLink:AndroidConfiguration:PackageName: com.Bienpluspharmacy.android.prd
+tenant:bp:IdentityService:DynamicLink:Endpoint: https://links.monfidelo.ca/prd/
+tenant:bp:IdentityService:DynamicLink:IOSConfiguration:AppBundleId: com.cellflare.Bienpluspharmacy.prd
+tenant:bp:IdentityService:DynamicLink:IOSConfiguration:AppStoreAppID: '123456789'
+tenant:bp:IdentityService:DynamicLink:IOSConfiguration:AppUrlScheme: ''
+tenant:bp:IdentityService:DynamicLink:IOSConfiguration:IPadBundleId: ''
+tenant:bp:IdentityService:DynamicLink:IOSConfiguration:IPadNotInstalledLink: ''
+tenant:bp:IdentityService:DynamicLink:IOSConfiguration:MinimumVersioNumber: ''
+tenant:bp:IdentityService:DynamicLink:IOSConfiguration:NotInstalledLink: ''
+tenant:bp:IdentityService:DynamicLink:SkipAppPreview: 'true'
+tenant:bp:IdentityService:Firestore:auth_provider_x509_cert_url: <<DEFINED BY TERRAFORM>>
+tenant:bp:IdentityService:Firestore:auth_uri: <<DEFINED BY TERRAFORM>>
+tenant:bp:IdentityService:Firestore:client_email: <<DEFINED BY TERRAFORM>>
+tenant:bp:IdentityService:Firestore:client_id: <<DEFINED BY TERRAFORM>>
+tenant:bp:IdentityService:Firestore:client_x509_cert_url: <<DEFINED BY TERRAFORM>>
+tenant:bp:IdentityService:Firestore:private_key: <<SECRET IN KEYVAULT>>
+tenant:bp:IdentityService:Firestore:private_key_id: <<DEFINED BY TERRAFORM>>
+tenant:bp:IdentityService:Firestore:project_id: <<DEFINED BY TERRAFORM>>
+tenant:bp:IdentityService:Firestore:token_uri: <<DEFINED BY TERRAFORM>>
+tenant:bp:IdentityService:Firestore:type: <<DEFINED BY TERRAFORM>>
+tenant:bp:IdentityService:MFA:MaxAccountEnableDaily: <<SECRET IN KEYVAULT>>
+tenant:bp:IdentityService:PasswordResetConfiguration:Link: https://verify-b2c-prd.mckesson.ca/change-password?token={0}&culture={1}&ui-culture={2}
+tenant:bp:LinkManagerService:ConsentsJsonFileName: bp/Consents.ca.prd.mk.json
+tenant:bp:LinkManagerService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:LinkManagerService:EncryptionConfiguration:IV: <<SECRET IN KEYVAULT>>
+tenant:bp:LinkManagerService:EncryptionConfiguration:Key: <<SECRET IN KEYVAULT>>
+tenant:bp:LinkManagerService:FitbitUrl: https://healthtrackerservice.b2c-prd.central.ca.mckesson.com/api/v1/users/{userId}/sources/fitbit
+tenant:bp:LinkManagerService:InfraConfiguration:ReportingConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:LinkManagerService:ThirdPartiesJsonFileName: bp/ThirdParties.ca.prd.mk.json
+tenant:bp:LoyaltyService:AppleWalletOptions:PassTypeIdentifier: 'pass.ca.monfidelo.loyalty'
+tenant:bp:LoyaltyService:AppleWalletOptions:TeamIdentifier: '9WRAR9345B'
+tenant:bp:LoyaltyService:AppleWalletOptions:OrganizationName: 'Corporation McKesson Canada, La'
+tenant:bp:LoyaltyService:AppleWalletOptions:Description: 'Loyalty Pass'
+tenant:bp:LoyaltyService:AppleWalletOptions:LogoText: 'Mckesson Loyalty'
+tenant:bp:LoyaltyService:AppleWalletOptions:WebServiceUrl: ''
+tenant:bp:LoyaltyService:AppleWalletOptions:IconFilesPath: './Certificates/iOSIcons'
+tenant:bp:LoyaltyService:AppleWalletOptions:WWDRCertPath: './Certificates/Fidelo_Loyalty_Pass_WWDR.pem'
+tenant:bp:LoyaltyService:AppleWalletOptions:CertificatePath: './Certificates/Fidelo_Loyalty_Pass_cert.pem'
+tenant:bp:LoyaltyService:AppleWalletOptions:KeyPath: './Certificates/Fidelo_Loyalty_Pass_key.pem'
+tenant:bp:LoyaltyService:AppleWalletOptions:CertificatePassword: '<<SECRET IN KEYVAULT>>'
+tenant:bp:LoyaltyService:AppleWalletOptions:PublicDomain: 'https://blob.monfidelo.ca'
+tenant:bp:LoyaltyService:AppleWalletOptions:AzureBlobStorageConnectionString: '<<SECRET IN KEYVAULT>>'
+tenant:bp:LoyaltyService:AppleWalletOptions:AzureBlobStorageContainer: 'ios'
+tenant:bp:LoyaltyService:AppleWalletOptions:WWDRCertContent: '<<SECRET IN KEYVAULT>>'
+tenant:bp:LoyaltyService:AppleWalletOptions:CertificateContent: '<<SECRET IN KEYVAULT>>'
+tenant:bp:LoyaltyService:AppleWalletOptions:KeyContent: '<<SECRET IN KEYVAULT>>'
+tenant:bp:LoyaltyService:GoogleWalletOptions:IssuerId: '3388000000023009016'
+tenant:bp:LoyaltyService:GoogleWalletOptions:ClassId: 'pass.ca.monfidelo.loyalty.v3'
+tenant:bp:LoyaltyService:GoogleWalletOptions:ServiceAccountEmail: 'wallet-api-service-1@gis-iam-prod-3d6b.iam.gserviceaccount.com'
+tenant:bp:LoyaltyService:GoogleWalletOptions:LogoUrl: https://media.monfidelo.ca/entity=pos_prod/banner=Uniprix/512x512_logo_fidelo.png
+tenant:bp:LoyaltyService:GoogleWalletOptions:HeroUrl: https://media.monfidelo.ca/entity=pos_prod/banner=Uniprix/Verticale%20590x380%201.png
+tenant:bp:LoyaltyService:GoogleWalletOptions:PrivateKeyPath: './'
+tenant:bp:LoyaltyService:GoogleWalletOptions:PrivateKey: '<<SECRET IN KEYVAULT>>'
+tenant:bp:LoyaltyService:ExchangeSolution:Authentication:MaxTimeCachedInSecond: '900'
+tenant:bp:LoyaltyService:ExchangeSolution:Authentication:OAuthClientId: 1573a749-3a2b-4964-a166-167dc3b90b9e
+tenant:bp:LoyaltyService:ExchangeSolution:Authentication:OAuthClientSecret: <<SECRET IN KEYVAULT>>
+tenant:bp:LoyaltyService:ExchangeSolution:Authentication:OAuthEndpoint: https://login.microsoftonline.com/da67ef1b-ca59-4db2-9a8c-aa8d94617a16/oauth2/v2.0/token
+tenant:bp:LoyaltyService:ExchangeSolution:Authentication:OcpApimSubscriptionKey: f269b0310e174bedb5f246b304b7119f
+tenant:bp:LoyaltyService:ExchangeSolution:Authentication:Scope: api://1573a749-3a2b-4964-a166-167dc3b90b9e/.default
+tenant:bp:LoyaltyService:ExchangeSolution:CdnUrl: https://cdn-ca-prd-mk.mkpbcb.com
+tenant:bp:LoyaltyService:ExchangeSolution:EnableFutureOffer: 'true'
+tenant:bp:LoyaltyService:ExchangeSolution:EnableMocks: 'false'
+tenant:bp:LoyaltyService:ExchangeSolution:Endpoints:V1: https://apihub.mckesson.ca/es/cb/client
+tenant:bp:LoyaltyService:ExchangeSolution:Endpoints:V2: https://apihub.mckesson.ca/es/cb/client
+tenant:bp:LoyaltyService:ExchangeSolution:MockOffers: 'false'
+tenant:bp:LoyaltyService:ExchangeSolution:MockProfiles: 'false'
+tenant:bp:LoyaltyService:ExchangeSolution:MockTransactionHistory: 'false'
+tenant:bp:LoyaltyService:ExchangeSolution:OnlineStores:0:BusinessUnit: WELLCA
+tenant:bp:LoyaltyService:ExchangeSolution:OnlineStores:0:ResourceDescription: wellca_Description
+tenant:bp:LoyaltyService:ExchangeSolution:OnlineStores:0:ResourceName: wellca_Name
+tenant:bp:LoyaltyService:ExchangeSolution:OnlineStores:0:Uid: D5FB3552-3EE2-4DE7-A69F-9185067C8C7F
+tenant:bp:LoyaltyService:ExchangeSolution:OnlineStores:0:Url: https://well.ca
+tenant:bp:LoyaltyService:ExchangeSolution:ProfileSyncMode: Basic
+tenant:bp:LoyaltyService:ExchangeSolution:Programs:0:Code: E
+tenant:bp:LoyaltyService:ExchangeSolution:Programs:0:Description: Employee_Description
+tenant:bp:LoyaltyService:ExchangeSolution:Programs:0:Enabled: 'false'
+tenant:bp:LoyaltyService:ExchangeSolution:Programs:0:ImageUrl: loyalty-service/rexall/logo-rexall.png
+tenant:bp:LoyaltyService:ExchangeSolution:Programs:0:ResourceName: Employee_Name
+tenant:bp:LoyaltyService:ExchangeSolution:Programs:0:Type: Restricted
+tenant:bp:LoyaltyService:ExchangeSolution:Programs:0:Url: ''
+tenant:bp:LoyaltyService:ExchangeSolution:Programs:1:Code: RBC
+tenant:bp:LoyaltyService:ExchangeSolution:Programs:1:Description: RBC_Description
+tenant:bp:LoyaltyService:ExchangeSolution:Programs:1:Enabled: 'true'
+tenant:bp:LoyaltyService:ExchangeSolution:Programs:1:ImageUrl: loyalty-service/rbc/logo-rbc.png
+tenant:bp:LoyaltyService:ExchangeSolution:Programs:1:ResourceName: RBC_Name
+tenant:bp:LoyaltyService:ExchangeSolution:Programs:1:Type: All
+tenant:bp:LoyaltyService:ExchangeSolution:Programs:1:Url: RBC_Url
+tenant:bp:LoyaltyService:ExchangeSolution:TiersConfiguration:MaxTierValue: 10000000
+tenant:bp:LoyaltyService:ExchangeSolution:TiersConfiguration:TierSize: 10000
+tenant:bp:LoyaltyService:ExchangeSolution:Version: '2'
+tenant:bp:LoyaltyService:LoadAll:ExpirationPeriodInHours: '24'
+tenant:bp:LoyaltyService:LoadAll:ExpirationReferenceTimezone: America/New_York
+tenant:bp:LoyaltyService:LoyaltyProvider: ExchangeSolution
+tenant:bp:LoyaltyService:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:LoyaltyService:Mongo:DatabaseName: CarebookPlatform
+tenant:bp:LoyaltyService:Name: BienPlus
+tenant:bp:LoyaltyService:Uid: D034E928-D134-4C2A-9382-3FD80DA064DA
+tenant:bp:LoyaltyService:EncryptionConfiguration:Key: '<<SECRET IN KEYVAULT>>'
+tenant:bp:LoyaltyService:EncryptionConfiguration:IV: '<<SECRET IN KEYVAULT>>'
+tenant:bp:LoyaltyService:GoogleWalletOptions:ShortRedirectBaseUrl: https://bffservice-b2c-prd.mckesson.ca/enduser/loyalty/v2/wallet/google/r
+tenant:bp:LoyaltyService:GoogleWalletOptions:ShortUrlSigningKey: <<SECRET IN KEYVAULT>>
+tenant:bp:LoyaltyService:GoogleWalletOptions:JwtLifetimeMinutes: '5'
+tenant:bp:PaymentService:CustomerInformationSettings:Authentication:OAuthClientId: ''
+tenant:bp:PaymentService:CustomerInformationSettings:Authentication:OAuthClientSecret: ''
+tenant:bp:PaymentService:CustomerInformationSettings:Authentication:OAuthEndpoint: ''
+tenant:bp:PaymentService:CustomerInformationSettings:Authentication:OcpApimSubscriptionKey: ''
+tenant:bp:PaymentService:CustomerInformationSettings:Mock:ApiKey: ''
+tenant:bp:PaymentService:CustomerInformationSettings:Mock:Endpoint: ''
+tenant:bp:PaymentService:CustomerInformationSettings:Provider: None
+tenant:bp:PaymentService:CustomerTokenSettings:Mock:ApiKey: ''
+tenant:bp:PaymentService:CustomerTokenSettings:Mock:Endpoint: ''
+tenant:bp:PaymentService:CustomerTokenSettings:Provider: None
+tenant:bp:ProfileService:AccountDeletion:IsNotifyPrivacyOfficer: 'false'
+tenant:bp:ProfileService:AccountDeletion:PrivacyOfficerEmail: privacyofficer@mckesson.ca
+tenant:bp:ProfileService:AccountDeletion:RedirectUrl: https://www.groupeBienplus.ca/{0}
+tenant:bp:ProfileService:AccountDeletion:RedirectUrls:en: https://monfideloprd.mckesson.ca/en/account-deletion-confirmation
+tenant:bp:ProfileService:AccountDeletion:RedirectUrls:fr: https://monfideloprd.mckesson.ca/fr/confirmation-desactivation-compte
+tenant:bp:ProfileService:AccountValidationLinks:ErrorRedirection: https://app.monfidelo.ca/error
+tenant:bp:ProfileService:AccountValidationLinks:Mobile: https://www.mckesson.ca/internal/feed
+tenant:bp:ProfileService:AccountValidationLinks:Web: https://app.monfidelo.ca/feed
+tenant:bp:ProfileService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:ProfileService:DynamicLink:AndroidConfiguration:MinimumVersion: ''
+tenant:bp:ProfileService:DynamicLink:AndroidConfiguration:NotInstalledLink: https://app.monfidelo.ca/feed
+tenant:bp:ProfileService:DynamicLink:AndroidConfiguration:PackageName: com.Bienpluspharmacy.android.prd
+tenant:bp:ProfileService:DynamicLink:Endpoint: https://links.monfidelo.ca/prd/
+tenant:bp:ProfileService:DynamicLink:IOSConfiguration:AppBundleId: com.cellflare.Bienpluspharmacy.prd
+tenant:bp:ProfileService:DynamicLink:IOSConfiguration:AppStoreAppID: '123456789'
+tenant:bp:ProfileService:DynamicLink:IOSConfiguration:AppUrlScheme: ''
+tenant:bp:ProfileService:DynamicLink:IOSConfiguration:IPadBundleId: ''
+tenant:bp:ProfileService:DynamicLink:IOSConfiguration:IPadNotInstalledLink: ''
+tenant:bp:ProfileService:DynamicLink:IOSConfiguration:MinimumVersioNumber: ''
+tenant:bp:ProfileService:DynamicLink:IOSConfiguration:NotInstalledLink: ''
+tenant:bp:ProfileService:DynamicLink:SkipAppPreview: 'true'
+tenant:bp:ProfileService:EncryptionConfiguration:IV: <<SECRET IN KEYVAULT>>
+tenant:bp:ProfileService:EncryptionConfiguration:Key: <<SECRET IN KEYVAULT>>
+tenant:bp:ProfileService:FeatureFlags:AccountValidation: 'true'
+tenant:bp:ProfileService:FeatureFlags:FunctionalTestMode: 'true'
+tenant:bp:ProfileService:FeatureFlags:LockAccountOnError: 'false'
+tenant:bp:ProfileService:FeatureFlags:TrackProfileCompletion: 'true'
+tenant:bp:ProfileService:FeatureFlags:ValidationTokenExpirationMinutes: '2880'
+tenant:bp:ProfileService:InfraConfiguration:ReportingConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:ProfileService:InvitationAcceptLinks:AndroidNotInstalledLinkOverride:bp: https://play.google.com/store/apps/details?id=com.Bienpluspharmacy.android
+tenant:bp:ProfileService:InvitationAcceptLinks:DynamicLinkSkipAppPreviewOverride:bp: 'false'
+tenant:bp:ProfileService:InvitationAcceptLinks:ErrorRedirection:bp: https://app.monfidelo.ca/invite-error
+tenant:bp:ProfileService:InvitationAcceptLinks:Experience:bp: EndUser
+tenant:bp:ProfileService:InvitationAcceptLinks:ExpireInMinutes:bp: 10
+tenant:bp:ProfileService:InvitationAcceptLinks:Image:bp: >-
+  https://firebasestorage.googleapis.com/v0/b/mckesson-41c5e.appspot.com/o/invitation%2Fimg-logo-illustration.png?alt=media&token=7a029b7d-48a2-4238-afbb-c04714c0cf3b
+tenant:bp:ProfileService:InvitationAcceptLinks:IosNotInstalledLinkOverride:bp: https://apps.apple.com/ca/app/Bienplus/id1109545741
+tenant:bp:ProfileService:InvitationAcceptLinks:IsMobileFlavor:bp: 'true'
+tenant:bp:ProfileService:InvitationAcceptLinks:Mobile:bp: https://www.mckesson.ca/internal/ftue/finalize
+tenant:bp:ProfileService:InvitationAcceptLinks:RecoverableErrorActionCode_Consumed:bp: https://www.mckesson.ca/internal/ftue/signin
+tenant:bp:ProfileService:InvitationAcceptLinks:RecoverableErrorActionCode_Expired:bp: https://www.mckesson.ca/internal/ftue/forgotpassword
+tenant:bp:ProfileService:InvitationAcceptLinks:RecoverableErrorActionCode_Invalid:bp: https://www.mckesson.ca/internal/ftue/signup
+tenant:bp:ProfileService:InvitationAcceptLinks:ResxKeyDescription:bp: Description
+tenant:bp:ProfileService:InvitationAcceptLinks:ResxKeyTitle:bp: Title
+tenant:bp:ProfileService:InvitationAcceptLinks:Web:bp: https://app.monfidelo.ca/invite-finalize
+tenant:bp:ProfileService:Loyalty:EnrollOnCreation: 'true'
+tenant:bp:ProfileService:MFA:IsMFAEnabledForNewAccount: <<SECRET IN KEYVAULT>>
+tenant:bp:ProfileService:Register:FeatureDependency:Default: Email,Password,FirstName,LastName
+tenant:bp:ProfileService:Register:FeatureDependency:Loyalty: Email,Password,PostalCode,BirthDate
+tenant:bp:ProfileService:Register:FeatureDependency:Prescriptions: Email,Password,PostalCode,BirthDate
+tenant:bp:ProfileService:Register:MinimumAgeRequirement: '14'
+tenant:bp:ProfileService:UserImportConfiguration:Key: <<SECRET IN KEYVAULT>>
+tenant:bp:ReminderService:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:ReminderService:Mongo:DatabaseName: CarebookPlatform
+tenant:bp:StoreService:FunctionalTestMode: 'true'
+tenant:bp:StoreService:GeoLocationMockSettings:IsMocked: 'false'
+tenant:bp:StoreService:GeoLocationMockSettings:MockedResult:AccuracyRadius: '50000'
+tenant:bp:StoreService:GeoLocationMockSettings:MockedResult:City: Toronto
+tenant:bp:StoreService:GeoLocationMockSettings:MockedResult:Country: CA
+tenant:bp:StoreService:GeoLocationMockSettings:MockedResult:Latitude: '43.651070'
+tenant:bp:StoreService:GeoLocationMockSettings:MockedResult:Longitude: '-79.347015'
+tenant:bp:StoreService:GeoLocationSettings:MaxMindLicenseKey: <<SECRET IN KEYVAULT>>
+tenant:bp:StoreService:GeoLocationSettings:MaxMindUserId: <<SECRET IN KEYVAULT>>
+tenant:bp:StoreService:Import:Authentication:OAuthClientId: <<SECRET IN KEYVAULT>>
+tenant:bp:StoreService:Import:Authentication:OAuthClientSecret: <<SECRET IN KEYVAULT>>
+tenant:bp:StoreService:Import:Authentication:OAuthEndpoint: >-
+  https://login.microsoftonline.com/da67ef1b-ca59-4db2-9a8c-aa8d94617a16/oauth2/v2.0/token
+tenant:bp:StoreService:Import:Authentication:OcpApimSubscriptionKey: <<SECRET IN KEYVAULT>>
+tenant:bp:StoreService:Import:Authentication:Scope: <<SECRET IN KEYVAULT>>
+tenant:bp:StoreService:Import:BannerName: REXALL
+tenant:bp:StoreService:Import:ContactUsUrl: https://www.rexall.ca/contact-us
+tenant:bp:StoreService:Import:DefaultTimeout: '00:00:30'
+tenant:bp:StoreService:Import:Endpoint: >-
+  https://apihub.mckesson.ca/BeautyStoreLocator/getstorelist?Latitude=49.8693927&Longitude=-97.1325079&NumResults=6000&ReturnRadius=6000
+tenant:bp:StoreService:Import:Flyer:EndPoint: https://flyer.rexall.ca/
+tenant:bp:StoreService:Import:Flyer:Type: '2'
+tenant:bp:StoreService:Import:MinimumPickupInMinutes: '60'
+tenant:bp:StoreService:Import:Notification:Enabled: 'true'
+tenant:bp:StoreService:Import:Notification:Endpoint: <<SECRET IN KEYVAULT>>
+tenant:bp:StoreService:Import:OpeningPickupInMinutes: '60'
+tenant:bp:StoreService:Import:PartnerName: Rexall
+tenant:bp:StoreService:Import:PatientConcernUrl: https://pharmacists.ab.ca/sites/default/files/PatientConcernPoster.pdf
+tenant:bp:StoreService:Import:PickupDelta: '30'
+tenant:bp:StoreService:Import:ProvinceCodeForLicense: AB
+tenant:bp:StoreService:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:StoreService:Mongo:DatabaseName: CarebookPlatform
+tenant:bp:StoreService:Mongo:MaxResultCount: '5000'
+tenant:bp:StoreService:SearchSettings:SearchAreaLimitsInMeters:0: 10000
+tenant:bp:StoreService:SearchSettings:SearchAreaLimitsInMeters:1: 20000
+tenant:bp:StoreService:SearchSettings:SearchAreaLimitsInMeters:2: 40000
+tenant:bp:StoreService:SearchSettings:SearchAreaLimitsInMeters:3: 80000
+tenant:bp:SurveyClientService:DataLayerSettings:AzureTableConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:SurveyClientService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:SurveyService:DataLayerSettings:AzureTableConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:SurveyService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:bp:Tenant: bp
+tenant:bp:TopologyService:CultureOverride:PostalCodeRegionalName: zipCode
+tenant:bp:TopologyService:CultureOverride:PostalCodeRegionalRegex: ^[0-9]{5}(?:-[0-9]{4})?\s*$
+tenant:bp:TopologyService:GeoLocationSettings:MaxMindLicenseKey: <<SECRET IN KEYVAULT>>
+tenant:bp:TopologyService:GeoLocationSettings:MaxMindUserId: <<SECRET IN KEYVAULT>>
+tenant:bp:TopologyService:GeoLocationSettings:Neutral: topology-countries-prd-mk.mkpbcb.com
+tenant:bp:TopologyService:GeoLocationSettings:SupportedCultures: en-US, en-CA, fr-CA
+tenant:bp:TopologyService:GeoLocationSettings:SupportedLanguages: en, fr
+tenant:px:Analytics:Amplitude:ApiKey: <<SECRET IN KEYVAULT>>
+tenant:px:Analytics:EncryptionConfiguration:IV: <<SECRET IN KEYVAULT>>
+tenant:px:Analytics:EncryptionConfiguration:Key: <<SECRET IN KEYVAULT>>
+tenant:px:AskService:AirTable:ApiKey: <<DEFINED BY TERRAFORM>>
+tenant:px:AskService:AirTable:Endpoint: https://api.airtable.com/v0/appWN6zK7kRX4eeXz/Public%20Deep%20Links
+tenant:px:AskService:Audit:Mongo:CollectionName: AskAudit
+tenant:px:AskService:Audit:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:AskService:Audit:Mongo:DatabaseName: PlatformAudit
+tenant:px:AskService:FeatureFlags:DefaultCommunicationOptIn: 'true'
+tenant:px:AskService:FeatureFlags:Loyalty: 'false'
+tenant:px:AskService:FeatureFlags:Pharmacy: 'true'
+tenant:px:AskService:Firestore:BaseAddress: <<DEFINED BY TERRAFORM>>
+tenant:px:AskService:Firestore:DocumentUri: environments/ca-ca-prd-px/configuration/maintenance
+tenant:px:AskService:Firestore:GoogleCredential: <<SECRET IN KEYVAULT>>
+tenant:px:AskService:Firestore:GoogleScopes:0: https://www.googleapis.com/auth/datastore
+tenant:px:AskService:Firestore:GoogleScopes:1: https://www.googleapis.com/auth/firebase.database
+tenant:px:CalculationService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:CalculationService:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:CalculationService:Mongo:DatabaseName: CarebookPlatform
+tenant:px:CommunicationService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:CommunicationService:DefaultLanguageConfiguration:Country: CA
+tenant:px:CommunicationService:DefaultLanguageConfiguration:Language: fr
+tenant:px:CommunicationService:EmailProvider: SalesForce
+tenant:px:CommunicationService:ExternalProviderUserProverId:IsLoyaltyTenant: 'false'
+tenant:px:CommunicationService:Firestore:auth_provider_x509_cert_url: <<DEFINED BY TERRAFORM>>
+tenant:px:CommunicationService:Firestore:auth_uri: <<DEFINED BY TERRAFORM>>
+tenant:px:CommunicationService:Firestore:client_email: <<DEFINED BY TERRAFORM>>
+tenant:px:CommunicationService:Firestore:client_id: <<DEFINED BY TERRAFORM>>
+tenant:px:CommunicationService:Firestore:client_x509_cert_url: <<DEFINED BY TERRAFORM>>
+tenant:px:CommunicationService:Firestore:private_key: <<DEFINED BY TERRAFORM>>
+tenant:px:CommunicationService:Firestore:private_key_id: <<DEFINED BY TERRAFORM>>
+tenant:px:CommunicationService:Firestore:project_id: <<DEFINED BY TERRAFORM>>
+tenant:px:CommunicationService:Firestore:token_uri: <<DEFINED BY TERRAFORM>>
+tenant:px:CommunicationService:Firestore:type: <<DEFINED BY TERRAFORM>>
+tenant:px:CommunicationService:InboxMessages:Placeholders:Cdn_Url: https://cdn-ca-prd-mk.mkpbcb.com
+tenant:px:CommunicationService:InboxMessages:Placeholders:Validity_Period_Hrs: https://cdn-ca-prd-mk.mkpbcb.com
+tenant:px:CommunicationService:InboxMessages:TemplateFileName: Data/MessageTemplates/inboxMessageTemplates
+tenant:px:CommunicationService:SalesForceSettings:MaxTimeCachedInSecond: '1800'
+tenant:px:CommunicationService:SalesForceSettings:OAuthClientId: d47sve115azczil0hge79yiz
+tenant:px:CommunicationService:SalesForceSettings:OAuthClientSecret: <<DEFINED BY TERRAFORM>>
+tenant:px:CommunicationService:SalesForceSettings:OAuthEndpoint: https://mcyfylph2k6hlcsnf3wfd4c64488.auth.marketingcloudapis.com/v2/token
+tenant:px:CommunicationService:SalesforceAdditionalProfileFields:IncludeAdditionalProfileFields: 'false'
+tenant:px:CommunicationService:SalesforceBanner:Name: PROXIM
+tenant:px:CommunicationService:SalesforceSubscriberKey:IsLoyaltyUID: 'false'
+tenant:px:CommunicationService:SalesforceUserSubscriptionValues:Model: >-
+  cb.Platform.CommunicationService.Business.SalesForce.Models.UserSubscriptionFormattedFieldModel
+tenant:px:CommunicationService:SendGridSettings:DontNotifyDomain: localhost.com
+tenant:px:CommunicationService:SendGridSettings:Password: <<DEFINED BY TERRAFORM>>
+tenant:px:CommunicationService:SendGridSettings:Sender: noreply@carebook.com
+tenant:px:CommunicationService:SendGridSettings:SenderName: carebook
+tenant:px:CommunicationService:SendGridSettings:SmtpEnableSsl: 'false'
+tenant:px:CommunicationService:SendGridSettings:SmtpPort: '587'
+tenant:px:CommunicationService:SendGridSettings:SmtpServer: smtp.sendgrid.net
+tenant:px:CommunicationService:SendGridSettings:Timeout: '10000'
+tenant:px:CommunicationService:SendGridSettings:UserName: apikey
+tenant:px:CoreAppApiService:AzureStorage:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:CoreAppApiService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:CoreAppApiService:EnableHtsFeature: 'true'
+tenant:px:CoreAppApiService:Flavor:MinimumAgeUser: '14'
+tenant:px:DocumentStoreService:AzureStorage:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:DocumentStoreService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:ESiService:BusinessValidationConfiguration:MinimumAgeUser: '14'
+tenant:px:ESiService:HttpHeaderToLogPropertyMapper:cb_runtime_correlationid: MCK-CORRELATIONID
+tenant:px:Flavor:SupportedFlavors:0: px
+tenant:px:HealthService:Broadcast:MaximumResourcesCountPerMessage: '50'
+tenant:px:FunctionalTest:CarebookMobileClientId: ProximMobile
+tenant:px:FunctionalTest:CarebookMobileClientSecret: <<SECRET IN KEYVAULT>>
+tenant:px:HealthService:Broadcast:ResourcesEnabled: ''
+tenant:px:HealthService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:HealthService:Medication:MedicationActiveTimeframeInMonths: '0'
+tenant:px:HealthService:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:HealthService:Mongo:DatabaseName: CarebookPlatform
+tenant:px:HealthtrackerService:Persistence:ValidicUsers:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:IdentityService:AccessTokenOverride:Clients:CustomExpirationMobileClient: '60'
+tenant:px:IdentityService:AccessTokenOverride:Clients:ProximMobile: '300'
+tenant:px:IdentityService:ChangePassword:MobileRedirection: https://www.mckesson.ca/internal/ftue/signin
+tenant:px:IdentityService:ChangePassword:WebRedirection: https://app.groupeproxim.ca/sign-in
+tenant:px:IdentityService:CreateNewAccount:WebRedirection: https://app.groupeproxim.ca/sign-up
+tenant:px:IdentityService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:IdentityService:DynamicLink:AndroidConfiguration:MinimumVersion: ''
+tenant:px:IdentityService:DynamicLink:AndroidConfiguration:NotInstalledLink: https://app.groupeproxim.ca/sign-in
+tenant:px:IdentityService:DynamicLink:AndroidConfiguration:PackageName: com.proximpharmacy.android
+tenant:px:IdentityService:DynamicLink:Endpoint: https://links.groupeproxim.ca/prd/
+tenant:px:IdentityService:DynamicLink:IOSConfiguration:AppBundleId: com.cellflare.proximpharmacy
+tenant:px:IdentityService:DynamicLink:IOSConfiguration:AppStoreAppID: ''
+tenant:px:IdentityService:DynamicLink:IOSConfiguration:AppUrlScheme: ''
+tenant:px:IdentityService:DynamicLink:IOSConfiguration:IPadBundleId: ''
+tenant:px:IdentityService:DynamicLink:IOSConfiguration:IPadNotInstalledLink: https://app.groupeproxim.ca/sign-in
+tenant:px:IdentityService:DynamicLink:IOSConfiguration:MinimumVersioNumber: ''
+tenant:px:IdentityService:DynamicLink:IOSConfiguration:NotInstalledLink: https://app.groupeproxim.ca/sign-in
+tenant:px:IdentityService:DynamicLink:SkipAppPreview: 'true'
+tenant:px:IdentityService:Firestore:auth_provider_x509_cert_url: <<DEFINED BY TERRAFORM>>
+tenant:px:IdentityService:Firestore:auth_uri: <<DEFINED BY TERRAFORM>>
+tenant:px:IdentityService:Firestore:client_email: <<DEFINED BY TERRAFORM>>
+tenant:px:IdentityService:Firestore:client_id: <<DEFINED BY TERRAFORM>>
+tenant:px:IdentityService:Firestore:client_x509_cert_url: <<DEFINED BY TERRAFORM>>
+tenant:px:IdentityService:Firestore:private_key: <<DEFINED BY TERRAFORM>>
+tenant:px:IdentityService:Firestore:private_key_id: <<DEFINED BY TERRAFORM>>
+tenant:px:IdentityService:Firestore:project_id: <<DEFINED BY TERRAFORM>>
+tenant:px:IdentityService:Firestore:token_uri: <<DEFINED BY TERRAFORM>>
+tenant:px:IdentityService:Firestore:type: <<DEFINED BY TERRAFORM>>
+tenant:px:IdentityService:MFA:MaxAccountEnableDaily: <<SECRET IN KEYVAULT>>
+tenant:px:IdentityService:PasswordResetConfiguration:Link: >-
+  https://verify-b2c-prd.mckesson.ca/change-password?token={0}&culture={1}&ui-culture={2}
+tenant:px:IdentityService:PasswordResetConfiguration:LinkMigratedUser: >-
+  https://verify-b2c-prd.mckesson.ca/change-password?token={0}&culture={1}&ui-culture={2}
+tenant:px:LinkManagerService:ConsentsJsonFileName: px/Consents.ca.prd.mk.json
+tenant:px:LinkManagerService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:LinkManagerService:EncryptionConfiguration:IV: <<SECRET IN KEYVAULT>>
+tenant:px:LinkManagerService:EncryptionConfiguration:Key: <<SECRET IN KEYVAULT>>
+tenant:px:LinkManagerService:FitbitUrl: https://healthtrackerservice.b2c-prod.central.ca.mckesson.com/api/v1/users/{userId}/sources/fitbit
+tenant:px:LinkManagerService:InfraConfiguration:ReportingConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:LinkManagerService:ThirdPartiesJsonFileName: px/ThirdParties.ca.prd.mk.json
+tenant:px:LoyaltyService:ExchangeSolution:Authentication:MaxTimeCachedInSecond: '900'
+tenant:px:LoyaltyService:ExchangeSolution:Authentication:OAuthClientId: 1573a749-3a2b-4964-a166-167dc3b90b9e
+tenant:px:LoyaltyService:ExchangeSolution:Authentication:OAuthClientSecret: <<SECRET IN KEYVAULT>>
+tenant:px:LoyaltyService:ExchangeSolution:Authentication:OAuthEndpoint: https://login.microsoftonline.com/da67ef1b-ca59-4db2-9a8c-aa8d94617a16/oauth2/v2.0/token
+tenant:px:LoyaltyService:ExchangeSolution:Authentication:OcpApimSubscriptionKey: f269b0310e174bedb5f246b304b7119f
+tenant:px:LoyaltyService:ExchangeSolution:Authentication:Scope: api://1573a749-3a2b-4964-a166-167dc3b90b9e/.default
+tenant:px:LoyaltyService:ExchangeSolution:CdnUrl: https://cdn-ca-prd-mk.mkpbcb.com
+tenant:px:LoyaltyService:ExchangeSolution:EnableFutureOffer: 'true'
+tenant:px:LoyaltyService:ExchangeSolution:EnableMocks: 'false'
+tenant:px:LoyaltyService:ExchangeSolution:Endpoints:V1: https://apihub.mckesson.ca/es/cb/client
+tenant:px:LoyaltyService:ExchangeSolution:Endpoints:V2: https://apihub.mckesson.ca/es/cb/client
+tenant:px:LoyaltyService:ExchangeSolution:MockOffers: 'false'
+tenant:px:LoyaltyService:ExchangeSolution:MockProfiles: 'false'
+tenant:px:LoyaltyService:ExchangeSolution:MockTransactionHistory: 'false'
+tenant:px:LoyaltyService:ExchangeSolution:OnlineStores:0:BusinessUnit: WELLCA
+tenant:px:LoyaltyService:ExchangeSolution:OnlineStores:0:ResourceDescription: wellca_Description
+tenant:px:LoyaltyService:ExchangeSolution:OnlineStores:0:ResourceName: wellca_Name
+tenant:px:LoyaltyService:ExchangeSolution:OnlineStores:0:Uid: D5FB3552-3EE2-4DE7-A69F-9185067C8C7F
+tenant:px:LoyaltyService:ExchangeSolution:OnlineStores:0:Url: https://well.ca
+tenant:px:LoyaltyService:ExchangeSolution:ProfileSyncMode: Basic
+tenant:px:LoyaltyService:ExchangeSolution:Programs:0:Code: E
+tenant:px:LoyaltyService:ExchangeSolution:Programs:0:Description: Employee_Description
+tenant:px:LoyaltyService:ExchangeSolution:Programs:0:Enabled: 'false'
+tenant:px:LoyaltyService:ExchangeSolution:Programs:0:ImageUrl: loyalty-service/rexall/logo-rexall.png
+tenant:px:LoyaltyService:ExchangeSolution:Programs:0:ResourceName: Employee_Name
+tenant:px:LoyaltyService:ExchangeSolution:Programs:0:Type: Restricted
+tenant:px:LoyaltyService:ExchangeSolution:Programs:0:Url: ''
+tenant:px:LoyaltyService:ExchangeSolution:Programs:1:Code: RBC
+tenant:px:LoyaltyService:ExchangeSolution:Programs:1:Description: RBC_Description
+tenant:px:LoyaltyService:ExchangeSolution:Programs:1:Enabled: 'true'
+tenant:px:LoyaltyService:ExchangeSolution:Programs:1:ImageUrl: loyalty-service/rbc/logo-rbc.png
+tenant:px:LoyaltyService:ExchangeSolution:Programs:1:ResourceName: RBC_Name
+tenant:px:LoyaltyService:ExchangeSolution:Programs:1:Type: All
+tenant:px:LoyaltyService:ExchangeSolution:Programs:1:Url: RBC_Url
+tenant:px:LoyaltyService:ExchangeSolution:TiersConfiguration:MaxTierValue: 10000000
+tenant:px:LoyaltyService:ExchangeSolution:TiersConfiguration:TierSize: 10000
+tenant:px:LoyaltyService:ExchangeSolution:Version: '2'
+tenant:px:LoyaltyService:LoyaltyProvider: ExchangeSolution
+tenant:px:LoyaltyService:LoadAll:ExpirationPeriodInHours: '24'
+tenant:px:LoyaltyService:LoadAll:ExpirationReferenceTimezone: America/New_York
+tenant:px:LoyaltyService:Name: BienPlus
+tenant:px:LoyaltyService:ServiceBusSettings:EventFilteringTenants:0: 88304927-ce7b-46fb-9351-9de854b0dca3
+tenant:px:LoyaltyService:Uid: D034E928-D134-4C2A-9382-3FD80DA064DA
+tenant:px:LoyaltyService:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:LoyaltyService:Mongo:DatabaseName: CarebookPlatform
+tenant:px:LoyaltyService:EncryptionConfiguration:Key: '<<SECRET IN KEYVAULT>>'
+tenant:px:LoyaltyService:EncryptionConfiguration:IV: '<<SECRET IN KEYVAULT>>'
+tenant:px:PaymentService:CustomerInformationSettings:Authentication:OAuthClientId: ''
+tenant:px:PaymentService:CustomerInformationSettings:Authentication:OAuthClientSecret: ''
+tenant:px:PaymentService:CustomerInformationSettings:Authentication:OAuthEndpoint: ''
+tenant:px:PaymentService:CustomerInformationSettings:Authentication:OcpApimSubscriptionKey: ''
+tenant:px:PaymentService:CustomerInformationSettings:Mock:ApiKey: ''
+tenant:px:PaymentService:CustomerInformationSettings:Mock:Endpoint: ''
+tenant:px:PaymentService:CustomerInformationSettings:Provider: None
+tenant:px:PaymentService:CustomerTokenSettings:Mock:ApiKey: ''
+tenant:px:PaymentService:CustomerTokenSettings:Mock:Endpoint: ''
+tenant:px:PaymentService:CustomerTokenSettings:Provider: ''
+tenant:px:ProfileService:AccountDeletion:IsNotifyPrivacyOfficer: 'false'
+tenant:px:ProfileService:AccountDeletion:PrivacyOfficerEmail: privacyofficer@mckesson.ca
+tenant:px:ProfileService:AccountDeletion:RedirectUrl: https://www.groupeproxim.ca/{0}
+tenant:px:ProfileService:AccountDeletion:RedirectUrls:en: https://www.groupeproxim.ca/en/account-deletion-confirmation
+tenant:px:ProfileService:AccountDeletion:RedirectUrls:fr: https://www.groupeproxim.ca/fr/confirmation-desactivation-compte
+tenant:px:ProfileService:AccountValidationLinks:ErrorRedirection: https://app.groupeproxim.ca/error
+tenant:px:ProfileService:AccountValidationLinks:Mobile: https://www.mckesson.ca/internal/feed
+tenant:px:ProfileService:AccountValidationLinks:Web: https://app.groupeproxim.ca/feed
+tenant:px:ProfileService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:ProfileService:DynamicLink:AndroidConfiguration:MinimumVersion: ''
+tenant:px:ProfileService:DynamicLink:AndroidConfiguration:NotInstalledLink: https://app.groupeproxim.ca/feed
+tenant:px:ProfileService:DynamicLink:AndroidConfiguration:PackageName: com.proximpharmacy.android
+tenant:px:ProfileService:DynamicLink:Endpoint: https://links.groupeproxim.ca/prd/
+tenant:px:ProfileService:DynamicLink:IOSConfiguration:AppBundleId: com.cellflare.proximpharmacy
+tenant:px:ProfileService:DynamicLink:IOSConfiguration:AppStoreAppID: ''
+tenant:px:ProfileService:DynamicLink:IOSConfiguration:AppUrlScheme: ''
+tenant:px:ProfileService:DynamicLink:IOSConfiguration:IPadBundleId: ''
+tenant:px:ProfileService:DynamicLink:IOSConfiguration:IPadNotInstalledLink: https://app.groupeproxim.ca/feed
+tenant:px:ProfileService:DynamicLink:IOSConfiguration:MinimumVersioNumber: ''
+tenant:px:ProfileService:DynamicLink:IOSConfiguration:NotInstalledLink: https://app.groupeproxim.ca/feed
+tenant:px:ProfileService:DynamicLink:SkipAppPreview: 'true'
+tenant:px:ProfileService:EncryptionConfiguration:IV: <<SECRET IN KEYVAULT>>
+tenant:px:ProfileService:EncryptionConfiguration:Key: <<SECRET IN KEYVAULT>>
+tenant:px:ProfileService:FeatureFlags:AccountValidation: 'true'
+tenant:px:ProfileService:FeatureFlags:FunctionalTestMode: 'false'
+tenant:px:ProfileService:FeatureFlags:LockAccountOnError: 'false'
+tenant:px:ProfileService:FeatureFlags:TrackProfileCompletion: 'false'
+tenant:px:ProfileService:FeatureFlags:ValidationTokenExpirationMinutes: '2880'
+tenant:px:ProfileService:InfraConfiguration:ReportingConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:ProfileService:InvitationAcceptLinks:AndroidNotInstalledLinkOverride:px: https://play.google.com/store/apps/details?id=com.proximpharmacy.android
+tenant:px:ProfileService:InvitationAcceptLinks:DynamicLinkSkipAppPreviewOverride:px: 'false'
+tenant:px:ProfileService:InvitationAcceptLinks:ErrorRedirection:px: https://app.groupeproxim.ca/invite-error
+tenant:px:ProfileService:InvitationAcceptLinks:Experience:px: EndUser
+tenant:px:ProfileService:InvitationAcceptLinks:ExpireInMinutes:px: '10'
+tenant:px:ProfileService:InvitationAcceptLinks:Image:px: >-
+  https://firebasestorage.googleapis.com/v0/b/mckesson-41c5e.appspot.com/o/invitation%2Fimg-logo-illustration.png?alt=media&token=7a029b7d-48a2-4238-afbb-c04714c0cf3b
+tenant:px:ProfileService:InvitationAcceptLinks:IosNotInstalledLinkOverride:px: https://apps.apple.com/ca/app/proxim/id1109545741
+tenant:px:ProfileService:InvitationAcceptLinks:IsMobileFlavor:px: 'true'
+tenant:px:ProfileService:InvitationAcceptLinks:Mobile:px: https://www.mckesson.ca/internal/ftue/finalize
+tenant:px:ProfileService:InvitationAcceptLinks:RecoverableErrorActionCode_Consumed:px: https://www.mckesson.ca/internal/ftue/signin
+tenant:px:ProfileService:InvitationAcceptLinks:RecoverableErrorActionCode_Expired:px: https://www.mckesson.ca/internal/ftue/forgotpassword
+tenant:px:ProfileService:InvitationAcceptLinks:RecoverableErrorActionCode_Invalid:px: https://www.mckesson.ca/internal/ftue/signup
+tenant:px:ProfileService:InvitationAcceptLinks:ResxKeyDescription:px: Description
+tenant:px:ProfileService:InvitationAcceptLinks:ResxKeyTitle:px: Title
+tenant:px:ProfileService:InvitationAcceptLinks:Web:px: https://app.groupeproxim.ca/invite-finalize
+tenant:px:ProfileService:Loyalty:EnrollOnCreation: 'false'
+tenant:px:ProfileService:MFA:IsMFAEnabledForNewAccount: <<SECRET IN KEYVAULT>>
+tenant:px:ProfileService:Register:FeatureDependency:Default: Email,Password,FirstName,LastName
+tenant:px:ProfileService:Register:FeatureDependency:Loyalty: Email,Password,PostalCode,BirthDate
+tenant:px:ProfileService:Register:FeatureDependency:Prescriptions: Email,Password,PostalCode,BirthDate
+tenant:px:ProfileService:Register:MinimumAgeRequirement: '14'
+tenant:px:ProfileService:UserImportConfiguration:Key: <<SECRET IN KEYVAULT>>
+tenant:px:ProximPharmacyService:ConnectionSettings:BlockTimeOutInSeconds: '31536000'
+tenant:px:ProximPharmacyService:ConnectionSettings:MaxInvalidAttempt: '5'
+tenant:px:ProximPharmacyService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:ProximPharmacyService:DefaultFillRequestPhotoUrl: app://no-photo
+tenant:px:ProximPharmacyService:DynamicLink:AndroidConfiguration:NotInstalledLink: https://app.groupeproxim.ca/feed
+tenant:px:ProximPharmacyService:DynamicLink:AndroidConfiguration:PackageName: com.proximpharmacy.android
+tenant:px:ProximPharmacyService:DynamicLink:Endpoint: https://links.groupeproxim.ca/prd/
+tenant:px:ProximPharmacyService:DynamicLink:IOSConfiguration:AppBundleId: com.cellflare.proximpharmacy
+tenant:px:ProximPharmacyService:DynamicLink:IOSConfiguration:AppStoreAppID: ''
+tenant:px:ProximPharmacyService:DynamicLink:IOSConfiguration:AppUrlScheme: ''
+tenant:px:ProximPharmacyService:DynamicLink:IOSConfiguration:IPadBundleId: ''
+tenant:px:ProximPharmacyService:DynamicLink:IOSConfiguration:IPadNotInstalledLink: https://app.groupeproxim.ca/feed
+tenant:px:ProximPharmacyService:DynamicLink:IOSConfiguration:MinimumVersioNumber: ''
+tenant:px:ProximPharmacyService:DynamicLink:IOSConfiguration:NotInstalledLink: https://app.groupeproxim.ca/feed
+tenant:px:ProximPharmacyService:DynamicLink:Links:FailedConnectionDOBMismatch:Mobile: https://www.mckesson.ca/internal/third-parties/<links-id>/dob
+tenant:px:ProximPharmacyService:DynamicLink:Links:FailedConnectionDOBMismatch:Web: https://app.groupeproxim.ca/profile/dob/<links-id>
+tenant:px:ProximPharmacyService:DynamicLink:Links:FailedConnectionPICMismatch:Mobile: https://www.mckesson.ca/internal/third-parties/<links-id>/pic
+tenant:px:ProximPharmacyService:DynamicLink:Links:FailedConnectionPICMismatch:Web: https://app.groupeproxim.ca/profile/pic/<links-id>
+tenant:px:ProximPharmacyService:DynamicLink:Links:Invitation:Mobile: https://www.mckesson.ca/internal/ftue/signup
+tenant:px:ProximPharmacyService:DynamicLink:Links:Invitation:Web: https://app.groupeproxim.ca/sign-up
+tenant:px:ProximPharmacyService:DynamicLink:Links:SuccessfulConnection:Mobile: https://www.mckesson.ca/internal/<profile-id>/thirdpartylinks/<links-id>/prescriptions
+tenant:px:ProximPharmacyService:DynamicLink:Links:SuccessfulConnection:Web: https://app.groupeproxim.ca/health/prescriptions
+tenant:px:ProximPharmacyService:DynamicLink:SkipAppPreview: 'true'
+tenant:px:ProximPharmacyService:EncryptionConfiguration:IV: <<SECRET IN KEYVAULT>>
+tenant:px:ProximPharmacyService:EncryptionConfiguration:Key: <<SECRET IN KEYVAULT>>
+tenant:px:ProximPharmacyService:ExpiryMinutes: 20160
+tenant:px:ProximPharmacyService:FeatureFlags:AllowReflexRxCommunication: <<SECRET IN KEYVAULT>>
+tenant:px:ProximPharmacyService:FunctionalTestMode: 'false'
+tenant:px:ProximPharmacyService:InvitationLanguage: fr
+tenant:px:ProximPharmacyService:MaxDoBChangeAttempts: '3'
+tenant:px:ProximPharmacyService:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:ProximPharmacyService:Mongo:DatabaseName: CarebookPlatform
+tenant:px:ProximPharmacyService:PrescriptionImportConfiguration:Key: <<SECRET IN KEYVAULT>>
+tenant:px:ProximPharmacyService:ReflexRx:Endpoint: <<SECRET IN KEYVAULT>>
+tenant:px:ProximPharmacyService:ReflexRx:OAuth:ClientId: <<SECRET IN KEYVAULT>>
+tenant:px:ProximPharmacyService:ReflexRx:OAuth:ClientSecret: <<SECRET IN KEYVAULT>>
+tenant:px:ProximPharmacyService:ReflexRx:OAuth:Endpoint: >-
+  https://login.microsoftonline.com/da67ef1b-ca59-4db2-9a8c-aa8d94617a16/oauth2/v2.0/token
+tenant:px:ProximPharmacyService:ReflexRx:OAuth:Scope: <<SECRET IN KEYVAULT>>
+tenant:px:ProximPharmacyService:ReflexRx:OcpApimSubscriptionKey: <<SECRET IN KEYVAULT>>
+tenant:px:ProximPharmacyService:ReminderMinutes: '10080'
+tenant:px:ProximPharmacyService:ShowSubmittedRefills: 'false'
+tenant:px:ProximPharmacyService:SubmittedRequestMaxAgeInMinutes: '10080'
+tenant:px:ProximPharmacyService:TenantCodeFilter: px
+tenant:px:ReminderService:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:ReminderService:Mongo:DatabaseName: CarebookPlatform
+tenant:px:Reporting:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:Reporting:McKesson:PGPBase64: <<SECRET IN KEYVAULT>>
+tenant:px:Reporting:McKesson:SFTPPassword: <<SECRET IN KEYVAULT>>
+tenant:px:Reporting:McKesson:SFTPServer: <<SECRET IN KEYVAULT>>
+tenant:px:Reporting:McKesson:SFTPUser: <<SECRET IN KEYVAULT>>
+tenant:px:Reporting:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:Reporting:Mongo:DatabaseName: CarebookPlatform
+tenant:px:Reporting:OrchestratorConfiguration:PipelineName: px_Profiles_and_ThirdPartyLinks_and_Fills_Refills
+tenant:px:Reporting:SFTP:PGPBase64: <<SECRET IN KEYVAULT>>
+tenant:px:Reporting:SFTP:Password: <<SECRET IN KEYVAULT>>
+tenant:px:Reporting:SFTP:Server: <<SECRET IN KEYVAULT>>
+tenant:px:Reporting:SFTP:User: <<SECRET IN KEYVAULT>>
+tenant:px:Reporting:SlackEndpoint: <<SECRET IN KEYVAULT>>
+tenant:px:Reporting:Storage:BlobPrefix: external/tenant-px/proxim/
+tenant:px:Reporting:Storage:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:Reporting:Storage:ContainerName: reporting
+tenant:px:StoreService:FunctionalTestMode: 'false'
+tenant:px:StoreService:GeoLocationMockSettings:IsMocked: 'false'
+tenant:px:StoreService:GeoLocationMockSettings:MockedResult:AccuracyRadius: '50000'
+tenant:px:StoreService:GeoLocationMockSettings:MockedResult:City: Quebec City
+tenant:px:StoreService:GeoLocationMockSettings:MockedResult:Country: CA
+tenant:px:StoreService:GeoLocationMockSettings:MockedResult:Latitude: '46.813889'
+tenant:px:StoreService:GeoLocationMockSettings:MockedResult:Longitude: '-71.208056'
+tenant:px:StoreService:GeoLocationSettings:MaxMindLicenseKey: <<SECRET IN KEYVAULT>>
+tenant:px:StoreService:GeoLocationSettings:MaxMindUserId: <<SECRET IN KEYVAULT>>
+tenant:px:StoreService:Import:Authentication:OAuthClientId: <<SECRET IN KEYVAULT>>
+tenant:px:StoreService:Import:Authentication:OAuthClientSecret: <<SECRET IN KEYVAULT>>
+tenant:px:StoreService:Import:Authentication:OAuthEndpoint: >-
+  https://login.microsoftonline.com/da67ef1b-ca59-4db2-9a8c-aa8d94617a16/oauth2/v2.0/token
+tenant:px:StoreService:Import:Authentication:OcpApimSubscriptionKey: <<SECRET IN KEYVAULT>>
+tenant:px:StoreService:Import:Authentication:Scope: <<SECRET IN KEYVAULT>>
+tenant:px:StoreService:Import:BannerName: PRX
+tenant:px:StoreService:Import:ContactUsUrl: https://www.groupeproxim.ca/fr/contact-us
+tenant:px:StoreService:Import:DefaultTimeout: '00:00:30'
+tenant:px:StoreService:Import:Endpoint: https://apihub.mckesson.ca/rbg/pharmacylocation?NumResults=2000&BannerCode=PRX
+tenant:px:StoreService:Import:Flyer:EndPoint: https://services.diem.ca/api/3.2/flipp/index?banner=P
+tenant:px:StoreService:Import:Flyer:Type: '1'
+tenant:px:StoreService:Import:MinimumPickupInMinutes: '120'
+tenant:px:StoreService:Import:Notification:Enabled: 'true'
+tenant:px:StoreService:Import:Notification:Endpoint: <<SECRET IN KEYVAULT>>
+tenant:px:StoreService:Import:OpeningPickupInMinutes: '60'
+tenant:px:StoreService:Import:PartnerName: proxim
+tenant:px:StoreService:Import:PatientConcernUrl: ''
+tenant:px:StoreService:Import:PickupDelta: '30'
+tenant:px:StoreService:Import:ProvinceCodeForLicense: AB
+tenant:px:StoreService:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:StoreService:Mongo:DatabaseName: CarebookPlatform
+tenant:px:StoreService:Mongo:MaxResultCount: '5000'
+tenant:px:StoreService:SearchSettings:SearchAreaLimitsInMeters:0: '10000'
+tenant:px:StoreService:SearchSettings:SearchAreaLimitsInMeters:1: '20000'
+tenant:px:StoreService:SearchSettings:SearchAreaLimitsInMeters:2: '40000'
+tenant:px:StoreService:SearchSettings:SearchAreaLimitsInMeters:3: '80000'
+tenant:px:StoreService:StoreDetailSettings:DeliveryTime:ReadyTimeCalculationMode: DynamicToCurrentTime
+tenant:px:StoreService:StoreDetailSettings:PickupTime:ReadyTimeCalculationMode: DynamicToCurrentTime
+tenant:px:SurveyClientService:CacheSettings:AllowProxyUserCaching: 'false'
+tenant:px:SurveyClientService:CacheSettings:AllowSurveyCaching: 'true'
+tenant:px:SurveyClientService:CacheSettings:AllowTableStorageUserCaching: 'false'
+tenant:px:SurveyClientService:DataLayerSettings:AzureTableConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:SurveyClientService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:SurveyService:DataLayerSettings:AzureTableConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:SurveyService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:px:Tenant: px
+tenant:px:TopologyService:GeoLocationSettings:MaxMindLicenseKey: <<SECRET IN KEYVAULT>>
+tenant:px:TopologyService:GeoLocationSettings:MaxMindUserId: <<SECRET IN KEYVAULT>>
+tenant:px:TopologyService:GeoLocationSettings:Neutral: topology-countries-prd-mk.mkpbcb.com
+tenant:px:TopologyService:GeoLocationSettings:SupportedCultures: en-US, en-CA, fr-CA
+tenant:px:TopologyService:GeoLocationSettings:SupportedLanguages: en, fr
+tenant:up:Analytics:Amplitude:ApiKey: <<SECRET IN KEYVAULT>>
+tenant:up:Analytics:EncryptionConfiguration:IV: <<SECRET IN KEYVAULT>>
+tenant:up:Analytics:EncryptionConfiguration:Key: <<SECRET IN KEYVAULT>>
+tenant:up:AskService:AirTable:ApiKey: <<DEFINED BY TERRAFORM>>
+tenant:up:AskService:AirTable:Endpoint: https://api.airtable.com/v0/appWN6zK7kRX4eeXz/Public%20Deep%20Links
+tenant:up:AskService:Audit:Mongo:CollectionName: AskAudit
+tenant:up:AskService:Audit:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:AskService:Audit:Mongo:DatabaseName: PlatformAudit
+tenant:up:AskService:FeatureFlags:DefaultCommunicationOptIn: 'true'
+tenant:up:AskService:FeatureFlags:Loyalty: 'false'
+tenant:up:AskService:FeatureFlags:Pharmacy: 'true'
+tenant:up:AskService:Firestore:BaseAddress: <<DEFINED BY TERRAFORM>>
+tenant:up:AskService:Firestore:DocumentUri: environments/ca-ca-prd-up/configuration/maintenance
+tenant:up:AskService:Firestore:GoogleCredential: <<SECRET IN KEYVAULT>>
+tenant:up:AskService:Firestore:GoogleScopes:0: https://www.googleapis.com/auth/datastore
+tenant:up:AskService:Firestore:GoogleScopes:1: https://www.googleapis.com/auth/firebase.database
+tenant:up:CalculationService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:CalculationService:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:CalculationService:Mongo:DatabaseName: CarebookPlatform
+tenant:up:CommunicationService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:CommunicationService:DefaultLanguageConfiguration:Country: CA
+tenant:up:CommunicationService:DefaultLanguageConfiguration:Language: fr
+tenant:up:CommunicationService:EmailProvider: SalesForce
+tenant:up:CommunicationService:ExternalProviderUserProverId:IsLoyaltyTenant: 'false'
+tenant:up:CommunicationService:Firestore:auth_provider_x509_cert_url: <<DEFINED BY TERRAFORM>>
+tenant:up:CommunicationService:Firestore:auth_uri: <<DEFINED BY TERRAFORM>>
+tenant:up:CommunicationService:Firestore:client_email: <<DEFINED BY TERRAFORM>>
+tenant:up:CommunicationService:Firestore:client_id: <<DEFINED BY TERRAFORM>>
+tenant:up:CommunicationService:Firestore:client_x509_cert_url: <<DEFINED BY TERRAFORM>>
+tenant:up:CommunicationService:Firestore:private_key: <<DEFINED BY TERRAFORM>>
+tenant:up:CommunicationService:Firestore:private_key_id: <<DEFINED BY TERRAFORM>>
+tenant:up:CommunicationService:Firestore:project_id: <<DEFINED BY TERRAFORM>>
+tenant:up:CommunicationService:Firestore:token_uri: <<DEFINED BY TERRAFORM>>
+tenant:up:CommunicationService:Firestore:type: <<DEFINED BY TERRAFORM>>
+tenant:up:CommunicationService:InboxMessages:Placeholders:Cdn_Url: https://cdn-ca-prd-mk.mkpbcb.com
+tenant:up:CommunicationService:InboxMessages:Placeholders:Validity_Period_Hrs: https://cdn-ca-prd-mk.mkpbcb.com
+tenant:up:CommunicationService:InboxMessages:TemplateFileName: Data/MessageTemplates/inboxMessageTemplates
+tenant:up:CommunicationService:SalesForceSettings:MaxTimeCachedInSecond: '1800'
+tenant:up:CommunicationService:SalesForceSettings:OAuthClientId: oh23n1xfu4dw6si2lwxj26q7
+tenant:up:CommunicationService:SalesForceSettings:OAuthClientSecret: <<DEFINED BY TERRAFORM>>
+tenant:up:CommunicationService:SalesForceSettings:OAuthEndpoint: https://mcyfylph2k6hlcsnf3wfd4c64488.auth.marketingcloudapis.com/v2/token
+tenant:up:CommunicationService:SalesforceAdditionalProfileFields:IncludeAdditionalProfileFields: 'false'
+tenant:up:CommunicationService:SalesforceBanner:Name: UNIPRIX
+tenant:up:CommunicationService:SalesforceSubscriberKey:IsLoyaltyUID: 'false'
+tenant:up:CommunicationService:SalesforceUserSubscriptionValues:Model: >-
+  cb.Platform.CommunicationService.Business.SalesForce.Models.UserSubscriptionFormattedFieldModel
+tenant:up:CommunicationService:SendGridSettings:DontNotifyDomain: localhost.com
+tenant:up:CommunicationService:SendGridSettings:Password: <<DEFINED BY TERRAFORM>>
+tenant:up:CommunicationService:SendGridSettings:Sender: noreply@carebook.com
+tenant:up:CommunicationService:SendGridSettings:SenderName: carebook
+tenant:up:CommunicationService:SendGridSettings:SmtpEnableSsl: 'false'
+tenant:up:CommunicationService:SendGridSettings:SmtpPort: '587'
+tenant:up:CommunicationService:SendGridSettings:SmtpServer: smtp.sendgrid.net
+tenant:up:CommunicationService:SendGridSettings:Timeout: '10000'
+tenant:up:CommunicationService:SendGridSettings:UserName: apikey
+tenant:up:CoreAppApiService:AzureStorage:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:CoreAppApiService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:CoreAppApiService:EnableHtsFeature: 'true'
+tenant:up:CoreAppApiService:Flavor:MinimumAgeUser: '14'
+tenant:up:DocumentStoreService:AzureStorage:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:DocumentStoreService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:ESiService:BusinessValidationConfiguration:MinimumAgeUser: '14'
+tenant:up:ESiService:HttpHeaderToLogPropertyMapper:cb_runtime_correlationid: MCK-CORRELATIONID
+tenant:up:FunctionalTest:CarebookMobileClientId: UniprixMobile
+tenant:up:Flavor:SupportedFlavors:0: up
+tenant:up:HealthService:Broadcast:MaximumResourcesCountPerMessage: '50'
+tenant:up:HealthService:Broadcast:ResourcesEnabled: ''
+tenant:up:HealthService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:HealthService:Medication:MedicationActiveTimeframeInMonths: '0'
+tenant:up:HealthService:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:HealthService:Mongo:DatabaseName: CarebookPlatform
+tenant:up:HealthtrackerService:Persistence:ValidicUsers:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:IdentityService:AccessTokenOverride:Clients:CustomExpirationMobileClient: '60'
+tenant:up:IdentityService:AccessTokenOverride:Clients:UniprixMobile: '300'
+tenant:up:IdentityService:ChangePassword:MobileRedirection: https://www.mckesson.ca/internal/ftue/signin
+tenant:up:IdentityService:ChangePassword:WebRedirection: https://app.uniprix.com/sign-in
+tenant:up:IdentityService:CreateNewAccount:WebRedirection: https://app.uniprix.com/sign-up
+tenant:up:IdentityService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:IdentityService:DynamicLink:AndroidConfiguration:MinimumVersion: ''
+tenant:up:IdentityService:DynamicLink:AndroidConfiguration:NotInstalledLink: https://app.uniprix.com/sign-in
+tenant:up:IdentityService:DynamicLink:AndroidConfiguration:PackageName: ca.tank.uniprix
+tenant:up:IdentityService:DynamicLink:Endpoint: https://links.uniprix.com/prd/
+tenant:up:IdentityService:DynamicLink:IOSConfiguration:AppBundleId: ca.tank.uniprix
+tenant:up:IdentityService:DynamicLink:IOSConfiguration:AppStoreAppID: ''
+tenant:up:IdentityService:DynamicLink:IOSConfiguration:AppUrlScheme: ''
+tenant:up:IdentityService:DynamicLink:IOSConfiguration:IPadBundleId: ''
+tenant:up:IdentityService:DynamicLink:IOSConfiguration:IPadNotInstalledLink: https://app.uniprix.com/sign-in
+tenant:up:IdentityService:DynamicLink:IOSConfiguration:MinimumVersioNumber: ''
+tenant:up:IdentityService:DynamicLink:IOSConfiguration:NotInstalledLink: https://app.uniprix.com/sign-in
+tenant:up:IdentityService:DynamicLink:SkipAppPreview: 'true'
+tenant:up:IdentityService:Firestore:auth_provider_x509_cert_url: <<DEFINED BY TERRAFORM>>
+tenant:up:IdentityService:Firestore:auth_uri: <<DEFINED BY TERRAFORM>>
+tenant:up:IdentityService:Firestore:client_email: <<DEFINED BY TERRAFORM>>
+tenant:up:IdentityService:Firestore:client_id: <<DEFINED BY TERRAFORM>>
+tenant:up:IdentityService:Firestore:client_x509_cert_url: <<DEFINED BY TERRAFORM>>
+tenant:up:IdentityService:Firestore:private_key: <<DEFINED BY TERRAFORM>>
+tenant:up:IdentityService:Firestore:private_key_id: <<DEFINED BY TERRAFORM>>
+tenant:up:IdentityService:Firestore:project_id: <<DEFINED BY TERRAFORM>>
+tenant:up:IdentityService:Firestore:token_uri: <<DEFINED BY TERRAFORM>>
+tenant:up:IdentityService:Firestore:type: <<DEFINED BY TERRAFORM>>
+tenant:up:IdentityService:MFA:MaxAccountEnableDaily: <<SECRET IN KEYVAULT>>
+tenant:up:IdentityService:PasswordResetConfiguration:Link: >-
+  https://verify-b2c-prd.mckesson.ca/change-password?token={0}&culture={1}&ui-culture={2}
+tenant:up:IdentityService:PasswordResetConfiguration:LinkMigratedUser: >-
+  https://verify-b2c-prd.mckesson.ca/change-password?token={0}&culture={1}&ui-culture={2}
+tenant:up:LinkManagerService:ConsentsJsonFileName: up/Consents.ca.prd.mk.json
+tenant:up:LinkManagerService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:LinkManagerService:EncryptionConfiguration:IV: <<SECRET IN KEYVAULT>>
+tenant:up:LinkManagerService:EncryptionConfiguration:Key: <<SECRET IN KEYVAULT>>
+tenant:up:LinkManagerService:FitbitUrl: https://healthtrackerservice.b2c-prod.central.ca.mckesson.com/api/v1/users/{userId}/sources/fitbit
+tenant:up:LinkManagerService:InfraConfiguration:ReportingConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:LinkManagerService:ThirdPartiesJsonFileName: up/ThirdParties.ca.prd.mk.json
+tenant:up:LoyaltyService:ExchangeSolution:Authentication:MaxTimeCachedInSecond: '900'
+tenant:up:LoyaltyService:ExchangeSolution:Authentication:OAuthClientId: 1573a749-3a2b-4964-a166-167dc3b90b9e
+tenant:up:LoyaltyService:ExchangeSolution:Authentication:OAuthClientSecret: <<SECRET IN KEYVAULT>>
+tenant:up:LoyaltyService:ExchangeSolution:Authentication:OAuthEndpoint: https://login.microsoftonline.com/da67ef1b-ca59-4db2-9a8c-aa8d94617a16/oauth2/v2.0/token
+tenant:up:LoyaltyService:ExchangeSolution:Authentication:OcpApimSubscriptionKey: f269b0310e174bedb5f246b304b7119f
+tenant:up:LoyaltyService:ExchangeSolution:Authentication:Scope: api://1573a749-3a2b-4964-a166-167dc3b90b9e/.default
+tenant:up:LoyaltyService:ExchangeSolution:CdnUrl: https://cdn-ca-prd-mk.mkpbcb.com
+tenant:up:LoyaltyService:ExchangeSolution:EnableFutureOffer: 'true'
+tenant:up:LoyaltyService:ExchangeSolution:EnableMocks: 'false'
+tenant:up:LoyaltyService:ExchangeSolution:Endpoints:V1: https://apihub.mckesson.ca/es/cb/client
+tenant:up:LoyaltyService:ExchangeSolution:Endpoints:V2: https://apihub.mckesson.ca/es/cb/client
+tenant:up:LoyaltyService:ExchangeSolution:MockOffers: 'false'
+tenant:up:LoyaltyService:ExchangeSolution:MockProfiles: 'false'
+tenant:up:LoyaltyService:ExchangeSolution:MockTransactionHistory: 'false'
+tenant:up:LoyaltyService:ExchangeSolution:OnlineStores:0:BusinessUnit: WELLCA
+tenant:up:LoyaltyService:ExchangeSolution:OnlineStores:0:ResourceDescription: wellca_Description
+tenant:up:LoyaltyService:ExchangeSolution:OnlineStores:0:ResourceName: wellca_Name
+tenant:up:LoyaltyService:ExchangeSolution:OnlineStores:0:Uid: D5FB3552-3EE2-4DE7-A69F-9185067C8C7F
+tenant:up:LoyaltyService:ExchangeSolution:OnlineStores:0:Url: https://well.ca
+tenant:up:LoyaltyService:ExchangeSolution:ProfileSyncMode: Basic
+tenant:up:LoyaltyService:ExchangeSolution:Programs:0:Code: E
+tenant:up:LoyaltyService:ExchangeSolution:Programs:0:Description: Employee_Description
+tenant:up:LoyaltyService:ExchangeSolution:Programs:0:Enabled: 'false'
+tenant:up:LoyaltyService:ExchangeSolution:Programs:0:ImageUrl: loyalty-service/rexall/logo-rexall.png
+tenant:up:LoyaltyService:ExchangeSolution:Programs:0:ResourceName: Employee_Name
+tenant:up:LoyaltyService:ExchangeSolution:Programs:0:Type: Restricted
+tenant:up:LoyaltyService:ExchangeSolution:Programs:0:Url: ''
+tenant:up:LoyaltyService:ExchangeSolution:Programs:1:Code: RBC
+tenant:up:LoyaltyService:ExchangeSolution:Programs:1:Description: RBC_Description
+tenant:up:LoyaltyService:ExchangeSolution:Programs:1:Enabled: 'true'
+tenant:up:LoyaltyService:ExchangeSolution:Programs:1:ImageUrl: loyalty-service/rbc/logo-rbc.png
+tenant:up:LoyaltyService:ExchangeSolution:Programs:1:ResourceName: RBC_Name
+tenant:up:LoyaltyService:ExchangeSolution:Programs:1:Type: All
+tenant:up:LoyaltyService:ExchangeSolution:Programs:1:Url: RBC_Url
+tenant:up:LoyaltyService:ExchangeSolution:TiersConfiguration:MaxTierValue: 10000000
+tenant:up:LoyaltyService:ExchangeSolution:TiersConfiguration:TierSize: 10000
+tenant:up:LoyaltyService:ExchangeSolution:Version: '2'
+tenant:up:LoyaltyService:LoyaltyProvider: ExchangeSolution
+tenant:up:LoyaltyService:LoadAll:ExpirationPeriodInHours: '24'
+tenant:up:LoyaltyService:LoadAll:ExpirationReferenceTimezone: America/New_York
+tenant:up:LoyaltyService:Name: BienPlus
+tenant:up:LoyaltyService:ServiceBusSettings:EventFilteringTenants:0: 88304927-ce7b-46fb-9351-9de854b0dca3
+tenant:up:LoyaltyService:Uid: D034E928-D134-4C2A-9382-3FD80DA064DA
+tenant:up:LoyaltyService:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:LoyaltyService:Mongo:DatabaseName: CarebookPlatform
+tenant:up:LoyaltyService:EncryptionConfiguration:Key: '<<SECRET IN KEYVAULT>>'
+tenant:up:LoyaltyService:EncryptionConfiguration:IV: '<<SECRET IN KEYVAULT>>'
+tenant:up:PaymentService:CustomerInformationSettings:Authentication:OAuthClientId: ''
+tenant:up:PaymentService:CustomerInformationSettings:Authentication:OAuthClientSecret: ''
+tenant:up:PaymentService:CustomerInformationSettings:Authentication:OAuthEndpoint: ''
+tenant:up:PaymentService:CustomerInformationSettings:Authentication:OcpApimSubscriptionKey: ''
+tenant:up:PaymentService:CustomerInformationSettings:Mock:ApiKey: ''
+tenant:up:PaymentService:CustomerInformationSettings:Mock:Endpoint: ''
+tenant:up:PaymentService:CustomerInformationSettings:Provider: None
+tenant:up:PaymentService:CustomerTokenSettings:Mock:ApiKey: ''
+tenant:up:PaymentService:CustomerTokenSettings:Mock:Endpoint: ''
+tenant:up:PaymentService:CustomerTokenSettings:Provider: None
+tenant:up:ProfileService:AccountDeletion:IsNotifyPrivacyOfficer: 'false'
+tenant:up:ProfileService:AccountDeletion:PrivacyOfficerEmail: privacyofficer@mckesson.ca
+tenant:up:ProfileService:AccountDeletion:RedirectUrl: https://www.uniprix.com/{0}
+tenant:up:ProfileService:AccountDeletion:RedirectUrls:en: https://www.uniprix.com/en/account-deletion-confirmation
+tenant:up:ProfileService:AccountDeletion:RedirectUrls:fr: https://www.uniprix.com/fr/confirmation-desactivation-compte
+tenant:up:ProfileService:AccountValidationLinks:ErrorRedirection: https://app.uniprix.com/error
+tenant:up:ProfileService:AccountValidationLinks:Mobile: https://www.mckesson.ca/internal/feed
+tenant:up:ProfileService:AccountValidationLinks:Web: https://app.uniprix.com/feed
+tenant:up:ProfileService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:ProfileService:DynamicLink:AndroidConfiguration:MinimumVersion: ''
+tenant:up:ProfileService:DynamicLink:AndroidConfiguration:NotInstalledLink: https://app.uniprix.com/feed
+tenant:up:ProfileService:DynamicLink:AndroidConfiguration:PackageName: ca.tank.uniprix
+tenant:up:ProfileService:DynamicLink:Endpoint: https://links.uniprix.com/prd/
+tenant:up:ProfileService:DynamicLink:IOSConfiguration:AppBundleId: ca.tank.uniprix
+tenant:up:ProfileService:DynamicLink:IOSConfiguration:AppStoreAppID: ''
+tenant:up:ProfileService:DynamicLink:IOSConfiguration:AppUrlScheme: ''
+tenant:up:ProfileService:DynamicLink:IOSConfiguration:IPadBundleId: ''
+tenant:up:ProfileService:DynamicLink:IOSConfiguration:IPadNotInstalledLink: https://app.uniprix.com/feed
+tenant:up:ProfileService:DynamicLink:IOSConfiguration:MinimumVersioNumber: ''
+tenant:up:ProfileService:DynamicLink:IOSConfiguration:NotInstalledLink: https://app.uniprix.com/feed
+tenant:up:ProfileService:DynamicLink:SkipAppPreview: 'true'
+tenant:up:ProfileService:EncryptionConfiguration:IV: <<SECRET IN KEYVAULT>>
+tenant:up:ProfileService:EncryptionConfiguration:Key: <<SECRET IN KEYVAULT>>
+tenant:up:ProfileService:FeatureFlags:AccountValidation: 'true'
+tenant:up:ProfileService:FeatureFlags:FunctionalTestMode: 'false'
+tenant:up:ProfileService:FeatureFlags:LockAccountOnError: 'false'
+tenant:up:ProfileService:FeatureFlags:TrackProfileCompletion: 'false'
+tenant:up:ProfileService:FeatureFlags:ValidationTokenExpirationMinutes: '2880'
+tenant:up:ProfileService:InfraConfiguration:ReportingConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:ProfileService:InvitationAcceptLinks:AndroidNotInstalledLinkOverride:up: https://play.google.com/store/apps/details?id=ca.tank.uniprix
+tenant:up:ProfileService:InvitationAcceptLinks:DynamicLinkSkipAppPreviewOverride:up: 'false'
+tenant:up:ProfileService:InvitationAcceptLinks:ErrorRedirection:up: https://app.uniprix.com/invite-error
+tenant:up:ProfileService:InvitationAcceptLinks:Experience:up: EndUser
+tenant:up:ProfileService:InvitationAcceptLinks:ExpireInMinutes:up: '10'
+tenant:up:ProfileService:InvitationAcceptLinks:Image:up: >-
+  https://firebasestorage.googleapis.com/v0/b/mckesson-41c5e.appspot.com/o/invitation%2Fimg-logo-illustration.png?alt=media&token=7a029b7d-48a2-4238-afbb-c04714c0cf3b
+tenant:up:ProfileService:InvitationAcceptLinks:IosNotInstalledLinkOverride:up: https://apps.apple.com/ca/app/uniprix/id756933888
+tenant:up:ProfileService:InvitationAcceptLinks:IsMobileFlavor:up: 'true'
+tenant:up:ProfileService:InvitationAcceptLinks:Mobile:up: https://www.mckesson.ca/internal/ftue/finalize
+tenant:up:ProfileService:InvitationAcceptLinks:RecoverableErrorActionCode_Consumed:up: https://www.mckesson.ca/internal/ftue/signin
+tenant:up:ProfileService:InvitationAcceptLinks:RecoverableErrorActionCode_Expired:up: https://www.mckesson.ca/internal/ftue/forgotpassword
+tenant:up:ProfileService:InvitationAcceptLinks:RecoverableErrorActionCode_Invalid:up: https://www.mckesson.ca/internal/ftue/signup
+tenant:up:ProfileService:InvitationAcceptLinks:ResxKeyDescription:up: Description
+tenant:up:ProfileService:InvitationAcceptLinks:ResxKeyTitle:up: Title
+tenant:up:ProfileService:InvitationAcceptLinks:Web:up: https://app.uniprix.com/invite-finalize
+tenant:up:ProfileService:Loyalty:EnrollOnCreation: 'false'
+tenant:up:ProfileService:MFA:IsMFAEnabledForNewAccount: <<SECRET IN KEYVAULT>>
+tenant:up:ProfileService:Register:FeatureDependency:Default: Email,Password,FirstName,LastName
+tenant:up:ProfileService:Register:FeatureDependency:Loyalty: Email,Password,PostalCode,BirthDate
+tenant:up:ProfileService:Register:FeatureDependency:Prescriptions: Email,Password,PostalCode,BirthDate
+tenant:up:ProfileService:Register:MinimumAgeRequirement: '14'
+tenant:up:ProfileService:UserImportConfiguration:Key: <<SECRET IN KEYVAULT>>
+tenant:up:ReminderService:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:ReminderService:Mongo:DatabaseName: CarebookPlatform
+tenant:up:Reporting:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:Reporting:McKesson:PGPBase64: <<SECRET IN KEYVAULT>>
+tenant:up:Reporting:McKesson:SFTPPassword: <<SECRET IN KEYVAULT>>
+tenant:up:Reporting:McKesson:SFTPServer: <<SECRET IN KEYVAULT>>
+tenant:up:Reporting:McKesson:SFTPUser: <<SECRET IN KEYVAULT>>
+tenant:up:Reporting:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:Reporting:Mongo:DatabaseName: CarebookPlatform
+tenant:up:Reporting:OrchestratorConfiguration:PipelineName: up_Profiles_and_ThirdPartyLinks_and_Fills_Refills
+tenant:up:Reporting:SFTP:PGPBase64: <<SECRET IN KEYVAULT>>
+tenant:up:Reporting:SFTP:Password: <<SECRET IN KEYVAULT>>
+tenant:up:Reporting:SFTP:Server: <<SECRET IN KEYVAULT>>
+tenant:up:Reporting:SFTP:User: <<SECRET IN KEYVAULT>>
+tenant:up:Reporting:SlackEndpoint: <<SECRET IN KEYVAULT>>
+tenant:up:Reporting:Storage:BlobPrefix: external/tenant-up/uniprix/
+tenant:up:Reporting:Storage:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:Reporting:Storage:ContainerName: reporting
+tenant:up:StoreService:FunctionalTestMode: 'false'
+tenant:up:StoreService:GeoLocationMockSettings:IsMocked: 'false'
+tenant:up:StoreService:GeoLocationMockSettings:MockedResult:AccuracyRadius: '50000'
+tenant:up:StoreService:GeoLocationMockSettings:MockedResult:City: Quebec City
+tenant:up:StoreService:GeoLocationMockSettings:MockedResult:Country: CA
+tenant:up:StoreService:GeoLocationMockSettings:MockedResult:Latitude: '46.813889'
+tenant:up:StoreService:GeoLocationMockSettings:MockedResult:Longitude: '-71.208056'
+tenant:up:StoreService:GeoLocationSettings:MaxMindLicenseKey: <<SECRET IN KEYVAULT>>
+tenant:up:StoreService:GeoLocationSettings:MaxMindUserId: <<SECRET IN KEYVAULT>>
+tenant:up:StoreService:Import:Authentication:OAuthClientId: <<SECRET IN KEYVAULT>>
+tenant:up:StoreService:Import:Authentication:OAuthClientSecret: <<SECRET IN KEYVAULT>>
+tenant:up:StoreService:Import:Authentication:OAuthEndpoint: >-
+  https://login.microsoftonline.com/da67ef1b-ca59-4db2-9a8c-aa8d94617a16/oauth2/v2.0/token
+tenant:up:StoreService:Import:Authentication:OcpApimSubscriptionKey: <<SECRET IN KEYVAULT>>
+tenant:up:StoreService:Import:Authentication:Scope: <<SECRET IN KEYVAULT>>
+tenant:up:StoreService:Import:BannerName: UNI
+tenant:up:StoreService:Import:ContactUsUrl: https://www.uniprix.com/fr/nous-joindre
+tenant:up:StoreService:Import:DefaultTimeout: '00:00:30'
+tenant:up:StoreService:Import:Endpoint: https://apihub.mckesson.ca/rbg/pharmacylocation?NumResults=2000&BannerCode=UNI
+tenant:up:StoreService:Import:Flyer:EndPoint: https://flyers.uniprix.com/flyers/uniprixpharmacy-weeklyflyer
+tenant:up:StoreService:Import:Flyer:Type: '1'
+tenant:up:StoreService:Import:MinimumPickupInMinutes: '120'
+tenant:up:StoreService:Import:Notification:Enabled: 'true'
+tenant:up:StoreService:Import:Notification:Endpoint: <<SECRET IN KEYVAULT>>
+tenant:up:StoreService:Import:OpeningPickupInMinutes: '60'
+tenant:up:StoreService:Import:PartnerName: Uniprix
+tenant:up:StoreService:Import:PatientConcernUrl: ''
+tenant:up:StoreService:Import:PickupDelta: '30'
+tenant:up:StoreService:Import:ProvinceCodeForLicense: AB
+tenant:up:StoreService:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:StoreService:Mongo:DatabaseName: CarebookPlatform
+tenant:up:StoreService:Mongo:MaxResultCount: '5000'
+tenant:up:StoreService:SearchSettings:SearchAreaLimitsInMeters:0: '10000'
+tenant:up:StoreService:SearchSettings:SearchAreaLimitsInMeters:1: '20000'
+tenant:up:StoreService:SearchSettings:SearchAreaLimitsInMeters:2: '40000'
+tenant:up:StoreService:SearchSettings:SearchAreaLimitsInMeters:3: '80000'
+tenant:up:StoreService:StoreDetailSettings:DeliveryTime:ReadyTimeCalculationMode: DynamicToCurrentTime
+tenant:up:StoreService:StoreDetailSettings:PickupTime:ReadyTimeCalculationMode: DynamicToCurrentTime
+tenant:up:SurveyClientService:CacheSettings:AllowProxyUserCaching: 'false'
+tenant:up:SurveyClientService:CacheSettings:AllowSurveyCaching: 'true'
+tenant:up:SurveyClientService:CacheSettings:AllowTableStorageUserCaching: 'false'
+tenant:up:SurveyClientService:DataLayerSettings:AzureTableConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:SurveyClientService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:SurveyService:DataLayerSettings:AzureTableConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:SurveyService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:Tenant: up
+tenant:up:TopologyService:GeoLocationSettings:MaxMindLicenseKey: <<SECRET IN KEYVAULT>>
+tenant:up:TopologyService:GeoLocationSettings:MaxMindUserId: <<SECRET IN KEYVAULT>>
+tenant:up:TopologyService:GeoLocationSettings:Neutral: topology-countries-prd-mk.mkpbcb.com
+tenant:up:TopologyService:GeoLocationSettings:SupportedCultures: en-US, en-CA, fr-CA
+tenant:up:TopologyService:GeoLocationSettings:SupportedLanguages: en, fr
+tenant:up:UniprixPharmacyService:ConnectionSettings:BlockTimeOutInSeconds: '31536000'
+tenant:up:UniprixPharmacyService:ConnectionSettings:MaxInvalidAttempt: '5'
+tenant:up:UniprixPharmacyService:Database:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:UniprixPharmacyService:DefaultFillRequestPhotoUrl: app://no-photo
+tenant:up:UniprixPharmacyService:DynamicLink:AndroidConfiguration:NotInstalledLink: https://app.uniprix.com/feed
+tenant:up:UniprixPharmacyService:DynamicLink:AndroidConfiguration:PackageName: ca.tank.uniprix
+tenant:up:UniprixPharmacyService:DynamicLink:Endpoint: https://links.uniprix.com/prd/
+tenant:up:UniprixPharmacyService:DynamicLink:IOSConfiguration:AppBundleId: ca.tank.uniprix
+tenant:up:UniprixPharmacyService:DynamicLink:IOSConfiguration:AppStoreAppID: ''
+tenant:up:UniprixPharmacyService:DynamicLink:IOSConfiguration:AppUrlScheme: ''
+tenant:up:UniprixPharmacyService:DynamicLink:IOSConfiguration:IPadBundleId: ''
+tenant:up:UniprixPharmacyService:DynamicLink:IOSConfiguration:IPadNotInstalledLink: https://app.uniprix.com/feed
+tenant:up:UniprixPharmacyService:DynamicLink:IOSConfiguration:MinimumVersioNumber: ''
+tenant:up:UniprixPharmacyService:DynamicLink:IOSConfiguration:NotInstalledLink: https://app.uniprix.com/feed
+tenant:up:UniprixPharmacyService:DynamicLink:Links:FailedConnectionDOBMismatch:Mobile: https://www.mckesson.ca/internal/third-parties/<links-id>/dob
+tenant:up:UniprixPharmacyService:DynamicLink:Links:FailedConnectionDOBMismatch:Web: https://app.uniprix.com/profile/dob/<links-id>
+tenant:up:UniprixPharmacyService:DynamicLink:Links:FailedConnectionPICMismatch:Mobile: https://www.mckesson.ca/internal/third-parties/<links-id>/pic
+tenant:up:UniprixPharmacyService:DynamicLink:Links:FailedConnectionPICMismatch:Web: https://app.uniprix.com/profile/pic/<links-id>
+tenant:up:UniprixPharmacyService:DynamicLink:Links:Invitation:Mobile: https://www.mckesson.ca/internal/ftue/signup
+tenant:up:UniprixPharmacyService:DynamicLink:Links:Invitation:Web: https://app.uniprix.com/sign-up
+tenant:up:UniprixPharmacyService:DynamicLink:Links:SuccessfulConnection:Mobile: https://www.mckesson.ca/internal/<profile-id>/thirdpartylinks/<links-id>/prescriptions
+tenant:up:UniprixPharmacyService:DynamicLink:Links:SuccessfulConnection:Web: https://app.uniprix.com/health/prescriptions
+tenant:up:UniprixPharmacyService:DynamicLink:SkipAppPreview: 'true'
+tenant:up:UniprixPharmacyService:EncryptionConfiguration:IV: <<SECRET IN KEYVAULT>>
+tenant:up:UniprixPharmacyService:EncryptionConfiguration:Key: <<SECRET IN KEYVAULT>>
+tenant:up:UniprixPharmacyService:ExpiryMinutes: '20160'
+tenant:up:UniprixPharmacyService:FeatureFlags:AllowReflexRxCommunication: <<SECRET IN KEYVAULT>>
+tenant:up:UniprixPharmacyService:FunctionalTestMode: 'false'
+tenant:up:UniprixPharmacyService:InvitationLanguage: fr
+tenant:up:UniprixPharmacyService:MaxDoBChangeAttempts: '3'
+tenant:up:UniprixPharmacyService:Mongo:ConnectionString: <<SECRET IN KEYVAULT>>
+tenant:up:UniprixPharmacyService:Mongo:DatabaseName: CarebookPlatform
+tenant:up:UniprixPharmacyService:ReflexRx:Endpoint: <<SECRET IN KEYVAULT>>
+tenant:up:UniprixPharmacyService:ReflexRx:OAuth:ClientId: <<SECRET IN KEYVAULT>>
+tenant:up:UniprixPharmacyService:ReflexRx:OAuth:ClientSecret: <<SECRET IN KEYVAULT>>
+tenant:up:UniprixPharmacyService:ReflexRx:OAuth:Endpoint: >-
+  https://login.microsoftonline.com/da67ef1b-ca59-4db2-9a8c-aa8d94617a16/oauth2/v2.0/token
+tenant:up:UniprixPharmacyService:ReflexRx:OAuth:Scope: <<SECRET IN KEYVAULT>>
+tenant:up:UniprixPharmacyService:ReflexRx:OcpApimSubscriptionKey: <<SECRET IN KEYVAULT>>
+tenant:up:UniprixPharmacyService:ReminderMinutes: '10080'
+tenant:up:UniprixPharmacyService:ShowSubmittedRefills: 'false'
+tenant:up:UniprixPharmacyService:SubmittedRequestMaxAgeInMinutes: '10080'
+tenant:up:UniprixPharmacyService:TenantCodeFilter: up

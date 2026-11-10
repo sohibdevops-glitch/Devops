@@ -1,0 +1,1 @@
+sonar.projectKey=mckesson_can-rbg-winterfell-infra_abba0d93-b689-412f-b385-307cefcbbbfc
